@@ -1,2 +1,7 @@
-# macOStudy
-mac  osx 开发基础视频项目工程
+## macOStudy
+![](https://img.shields.io/badge/platform-MacOSX-red.svg)
+![](https://img.shields.io/badge/Language-swift4.0-orange.svg)
+
+MacOS 进阶项目课程
+ 
+
