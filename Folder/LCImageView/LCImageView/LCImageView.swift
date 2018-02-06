@@ -51,7 +51,40 @@ class LCImageView: NSImageView {
         
         circleLayer.add(circleAnimation, forKey: "transform.rotation.z")
         
+        
+        lineShaperLayer()
     
+    }
+    
+    fileprivate func lineShaperLayer(){
+        
+        let textLayer = CATextLayer()
+        textLayer.string = "hello text"
+        textLayer.frame = NSRect(x: 50, y: 50, width: 100, height: 20)
+        textLayer.fontSize = 14
+        textLayer.foregroundColor = NSColor.red.cgColor
+        
+        
+        let lineLayer = CAShapeLayer()
+        lineLayer.strokeColor = NSColor.lightGray.cgColor
+        lineLayer.lineDashPattern = [10,5]
+        lineLayer.lineWidth = 20
+        let path = CGMutablePath()
+        path.addLines(between: [CGPoint(x: 50, y: 50 ),CGPoint(x:150, y:50) ])
+        lineLayer.path = path
+        
+        lineLayer.addSublayer(textLayer)
+        
+        layer?.addSublayer(lineLayer)
+        
+        let lineDashAnimation = CABasicAnimation(keyPath: "lineDashPhase")
+        lineDashAnimation.fromValue = 0
+        lineDashAnimation.toValue = lineLayer.lineDashPattern?.reduce(0){$0 + $1.intValue}
+        lineDashAnimation.duration = 3
+        lineDashAnimation.repeatCount = Float.greatestFiniteMagnitude
+        lineLayer.add(lineDashAnimation, forKey: nil)
+        
+        
     }
     
 }
