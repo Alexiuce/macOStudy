@@ -15,17 +15,7 @@ class LoginViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         view.layer?.backgroundColor = NSColor.clear.cgColor
-      
-        
-      
-        
-        
     }
-    override func viewDidAppear() {
-        super.viewDidAppear()
-          accountTextField.becomeFirstResponder()
-        print(NSApp.keyWindow)
-        
-    }
+   
 }
 
