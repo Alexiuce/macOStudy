@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835032036D80A0074DB72 /* LoginWindowController.swift */; };
 		D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835052036D8270074DB72 /* LoginViewController.swift */; };
+		D8A835082036E7440074DB72 /* BGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835072036E7440074DB72 /* BGImageView.swift */; };
+		D8A8350A2036F0880074DB72 /* LoginWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835092036F0880074DB72 /* LoginWindow.swift */; };
 		D8B00B0620353C9D005F53AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00B0520353C9D005F53AD /* AppDelegate.swift */; };
 		D8B00B0820353C9D005F53AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00B0720353C9D005F53AD /* ViewController.swift */; };
 		D8B00B0A20353C9D005F53AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B00B0920353C9D005F53AD /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		D8A835032036D80A0074DB72 /* LoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWindowController.swift; sourceTree = "<group>"; };
 		D8A835052036D8270074DB72 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D8A835072036E7440074DB72 /* BGImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImageView.swift; sourceTree = "<group>"; };
+		D8A835092036F0880074DB72 /* LoginWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWindow.swift; sourceTree = "<group>"; };
 		D8B00B0220353C9D005F53AD /* SwiftQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B00B0520353C9D005F53AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8B00B0720353C9D005F53AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +50,9 @@
 			isa = PBXGroup;
 			children = (
 				D8A835032036D80A0074DB72 /* LoginWindowController.swift */,
+				D8A835092036F0880074DB72 /* LoginWindow.swift */,
 				D8A835052036D8270074DB72 /* LoginViewController.swift */,
+				D8A835072036E7440074DB72 /* BGImageView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -163,10 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A835082036E7440074DB72 /* BGImageView.swift in Sources */,
 				D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */,
 				D8B00B0820353C9D005F53AD /* ViewController.swift in Sources */,
 				D8B00B0620353C9D005F53AD /* AppDelegate.swift in Sources */,
 				D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */,
+				D8A8350A2036F0880074DB72 /* LoginWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

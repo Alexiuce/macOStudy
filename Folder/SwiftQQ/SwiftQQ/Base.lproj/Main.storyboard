@@ -704,11 +704,11 @@
         <!--Window Controller-->
         <scene sceneID="mBB-cD-leH">
             <objects>
-                <windowController id="Ul8-vX-bfa" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="lCx-xg-vc4">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                <windowController id="Ul8-vX-bfa" customClass="LoginWindowController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titleVisibility="hidden" id="lCx-xg-vc4" customClass="LoginWindow" customModule="SwiftQQ" customModuleProvider="target">
+                        <windowStyleMask key="styleMask" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="240" height="320"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                         <connections>
                             <outlet property="delegate" destination="Ul8-vX-bfa" id="72c-eq-gw4"/>
@@ -722,18 +722,80 @@
             </objects>
             <point key="canvasLocation" x="772" y="202"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="la9-qk-yMo">
             <objects>
-                <viewController id="FJv-ez-pQH" sceneMemberID="viewController">
-                    <view key="view" id="Y8C-8J-UiQ">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="FJv-ez-pQH" customClass="LoginViewController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="Y8C-8J-UiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HS5-c4-vbN" customClass="BGImageView" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" focusRingType="none" alignment="left" imageScaling="axesIndependently" image="bg-back" id="IW5-0s-U2P"/>
+                            </imageView>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVH-xC-etD">
+                                <rect key="frame" x="9" y="296" width="14" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icon-close-normal" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="I8w-sb-0A7">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pk-N9-Tbg">
+                                <rect key="frame" x="85" y="199" width="70" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="LoginWindow_BigDefaultHeadImage" id="im0-U8-Coq"/>
+                            </imageView>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDz-0D-Zb3">
+                                <rect key="frame" x="30" y="82" width="181" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" usesSingleLineMode="YES" id="liT-2Y-Thx">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.97194463014602661" green="0.97196739912033081" blue="0.97195512056350708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypm-Td-vvo">
+                                <rect key="frame" x="30" y="42" width="100" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="请输入密码" id="e6n-XZ-pJ1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.97194463014602661" green="0.97196739912033081" blue="0.97195512056350708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwx-Th-X0I">
+                                <rect key="frame" x="32" y="72" width="177" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="input-bottom" id="Oj8-U6-xwJ"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chL-H8-dSB">
+                                <rect key="frame" x="32" y="31" width="177" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="input-bottom" id="I2H-CC-qYj"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnM-gU-FWK">
+                                <rect key="frame" x="189" y="44" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon-enter-undo" id="N0U-Jv-1jB"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5n-qW-OY0">
+                                <rect key="frame" x="108" y="3" width="24" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon-Arrow-normal" id="mdI-Mn-pdg"/>
+                            </imageView>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="accountTextField" destination="nDz-0D-Zb3" id="EVo-u7-9Zi"/>
+                        <outlet property="bg_imageView" destination="HS5-c4-vbN" id="NFV-pA-P7B"/>
+                    </connections>
                 </viewController>
                 <customObject id="wD6-Dr-rAe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1479" y="177"/>
+            <point key="canvasLocation" x="1085" y="202"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -749,4 +811,12 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon-Arrow-normal" width="14" height="14"/>
+        <image name="LoginWindow_BigDefaultHeadImage" width="93" height="93"/>
+        <image name="bg-back" width="248" height="315"/>
+        <image name="icon-close-normal" width="14" height="14"/>
+        <image name="icon-enter-undo" width="20" height="20"/>
+        <image name="input-bottom" width="186" height="1"/>
+    </resources>
 </document>
