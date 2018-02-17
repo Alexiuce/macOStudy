@@ -760,6 +760,9 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" red="0.97194463014602661" green="0.97196739912033081" blue="0.97195512056350708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="FJv-ez-pQH" id="rzZ-TR-nnZ"/>
+                                </connections>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwx-Th-X0I">
                                 <rect key="frame" x="32" y="72" width="177" height="10"/>
@@ -771,11 +774,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="input-bottom" id="I2H-CC-qYj"/>
                             </imageView>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnM-gU-FWK">
-                                <rect key="frame" x="189" y="44" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon-enter-undo" id="N0U-Jv-1jB"/>
-                            </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5n-qW-OY0">
                                 <rect key="frame" x="108" y="3" width="24" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -786,11 +784,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="LoginWindow_BigDefaultHeadImage" id="im0-U8-Coq"/>
                             </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-mF-Eql" customClass="HoverButton" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="189" y="43" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="icon-enter-undo" imagePosition="overlaps" alignment="center" alternateImage="icon-enter-down" imageScaling="proportionallyDown" inset="2" id="ANj-fA-2Py">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="accountTextField" destination="nDz-0D-Zb3" id="EVo-u7-9Zi"/>
                         <outlet property="bg_imageView" destination="HS5-c4-vbN" id="NFV-pA-P7B"/>
+                        <outlet property="passwordButton" destination="LGY-mF-Eql" id="B8r-XQ-fvX"/>
+                        <outlet property="passwordTextField" destination="ypm-Td-vvo" id="BHC-If-ry2"/>
                     </connections>
                 </viewController>
                 <customObject id="wD6-Dr-rAe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -816,6 +824,7 @@
         <image name="LoginWindow_BigDefaultHeadImage" width="93" height="93"/>
         <image name="bg-back" width="248" height="315"/>
         <image name="icon-close-normal" width="14" height="14"/>
+        <image name="icon-enter-down" width="20" height="20"/>
         <image name="icon-enter-undo" width="20" height="20"/>
         <image name="input-bottom" width="186" height="1"/>
     </resources>

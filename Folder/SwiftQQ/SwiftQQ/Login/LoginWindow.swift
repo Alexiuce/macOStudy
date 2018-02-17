@@ -10,7 +10,7 @@ import Cocoa
 class LoginWindow: NSWindow {
 
     
-//    override var canBecomeKey: Bool{
-//        return true
-//    }
+    override var canBecomeKey: Bool{
+        return true
+    }
 }
