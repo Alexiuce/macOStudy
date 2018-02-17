@@ -743,11 +743,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pk-N9-Tbg">
-                                <rect key="frame" x="85" y="199" width="70" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="LoginWindow_BigDefaultHeadImage" id="im0-U8-Coq"/>
-                            </imageView>
                             <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDz-0D-Zb3">
                                 <rect key="frame" x="30" y="82" width="181" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -785,6 +780,11 @@
                                 <rect key="frame" x="108" y="3" width="24" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon-Arrow-normal" id="mdI-Mn-pdg"/>
+                            </imageView>
+                            <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pk-N9-Tbg" customClass="HoverImageView" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="69" y="186" width="102" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="LoginWindow_BigDefaultHeadImage" id="im0-U8-Coq"/>
                             </imageView>
                         </subviews>
                     </view>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8822D682037EE5000B2DA7B /* HoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8822D672037EE5000B2DA7B /* HoverImageView.swift */; };
 		D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835032036D80A0074DB72 /* LoginWindowController.swift */; };
 		D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835052036D8270074DB72 /* LoginViewController.swift */; };
 		D8A835082036E7440074DB72 /* BGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835072036E7440074DB72 /* BGImageView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8822D672037EE5000B2DA7B /* HoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverImageView.swift; sourceTree = "<group>"; };
 		D8A835032036D80A0074DB72 /* LoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWindowController.swift; sourceTree = "<group>"; };
 		D8A835052036D8270074DB72 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D8A835072036E7440074DB72 /* BGImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImageView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				D8A835052036D8270074DB72 /* LoginViewController.swift */,
 				D8A835072036E7440074DB72 /* BGImageView.swift */,
 				D8A8350B2036F6D10074DB72 /* HeadImageView.swift */,
+				D8822D672037EE5000B2DA7B /* HoverImageView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A835082036E7440074DB72 /* BGImageView.swift in Sources */,
+				D8822D682037EE5000B2DA7B /* HoverImageView.swift in Sources */,
 				D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */,
 				D8B00B0820353C9D005F53AD /* ViewController.swift in Sources */,
 				D8A8350C2036F6D10074DB72 /* HeadImageView.swift in Sources */,
