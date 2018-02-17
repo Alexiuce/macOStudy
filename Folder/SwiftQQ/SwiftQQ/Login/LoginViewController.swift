@@ -9,6 +9,7 @@ import Cocoa
 
 class LoginViewController: NSViewController {
 
+    @IBOutlet weak var headButton: NSButton!
     @IBOutlet weak var passwordTextField: NSTextField!
     @IBOutlet weak var passwordButton: HoverButton!
     @IBOutlet weak var accountTextField: NSTextField!
@@ -17,6 +18,7 @@ class LoginViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         view.layer?.backgroundColor = NSColor.clear.cgColor
+        headButton.layer?.cornerRadius = headButton.bounds.size.width * 0.5
  
     }
 }

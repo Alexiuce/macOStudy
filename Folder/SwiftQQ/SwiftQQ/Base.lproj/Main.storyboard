@@ -780,9 +780,9 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon-Arrow-normal" id="mdI-Mn-pdg"/>
                             </imageView>
                             <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pk-N9-Tbg" customClass="HoverImageView" customModule="SwiftQQ" customModuleProvider="target">
-                                <rect key="frame" x="69" y="186" width="102" height="102"/>
+                                <rect key="frame" x="70" y="193" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="LoginWindow_BigDefaultHeadImage" id="im0-U8-Coq"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="head-normal" id="im0-U8-Coq"/>
                             </imageView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-mF-Eql" customClass="HoverButton" customModule="SwiftQQ" customModuleProvider="target">
                                 <rect key="frame" x="189" y="43" width="20" height="20"/>
@@ -792,11 +792,20 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <button wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLY-jC-q88">
+                                <rect key="frame" x="73" y="194" width="93" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="LoginWindow_BigDefaultHeadImage" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="dIH-ht-EMx">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="accountTextField" destination="nDz-0D-Zb3" id="EVo-u7-9Zi"/>
                         <outlet property="bg_imageView" destination="HS5-c4-vbN" id="NFV-pA-P7B"/>
+                        <outlet property="headButton" destination="BLY-jC-q88" id="iSj-By-FFS"/>
                         <outlet property="passwordButton" destination="LGY-mF-Eql" id="B8r-XQ-fvX"/>
                         <outlet property="passwordTextField" destination="ypm-Td-vvo" id="BHC-If-ry2"/>
                     </connections>
@@ -823,6 +832,7 @@
         <image name="Icon-Arrow-normal" width="14" height="14"/>
         <image name="LoginWindow_BigDefaultHeadImage" width="93" height="93"/>
         <image name="bg-back" width="248" height="315"/>
+        <image name="head-normal" width="102" height="102"/>
         <image name="icon-close-normal" width="14" height="14"/>
         <image name="icon-enter-down" width="20" height="20"/>
         <image name="icon-enter-undo" width="20" height="20"/>
