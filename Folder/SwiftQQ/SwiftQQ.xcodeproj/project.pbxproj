@@ -52,6 +52,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8822D6B2038118F00B2DA7B /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
 		D8A835002036D7B50074DB72 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +92,7 @@
 		D8B00B0420353C9D005F53AD /* SwiftQQ */ = {
 			isa = PBXGroup;
 			children = (
+				D8822D6B2038118F00B2DA7B /* Catagory */,
 				D8A835002036D7B50074DB72 /* Login */,
 				D8B00B1520355E34005F53AD /* resource */,
 				D8B00B0520353C9D005F53AD /* AppDelegate.swift */,

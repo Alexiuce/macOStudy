@@ -36,13 +36,13 @@ class HoverImageView: NSImageView {
     }
     
     override func mouseEntered(with event: NSEvent) {
-        print("mouse enter")
+
         borderLayer.contents = hoverImage
         
     }
     
     override func mouseExited(with event: NSEvent) {
-        print("mouse exit")
+        
         borderLayer.contents = normalImage
     }
 }
