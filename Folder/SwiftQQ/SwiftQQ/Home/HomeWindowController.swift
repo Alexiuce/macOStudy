@@ -9,22 +9,30 @@ import Cocoa
 
 class HomeWindowController: NSWindowController {
 
+    lazy var themeView: NSView = {
+        let view = self.window?.standardWindowButton(NSWindow.ButtonType.closeButton)?.superview
+        return view!
+    }()
+
     override func windowDidLoad() {
         super.windowDidLoad()
         window?.isMovableByWindowBackground = true
+      
        
-        let themeView = window?.standardWindowButton(NSWindow.ButtonType.closeButton)?.superview?.superview
-        
-        themeView?.frame.origin.y -= (34 - (themeView?.frame.height)! * 0.5)
-    
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-       window?.delegate = self
     }
     
-   
+    fileprivate func updateWindowTitleBar(){
+       
+        
+    }
 }
 
 extension HomeWindowController: NSWindowDelegate{
+    func windowDidResize(_ notification: Notification) {
+       
+    }
+    
    
    
 }

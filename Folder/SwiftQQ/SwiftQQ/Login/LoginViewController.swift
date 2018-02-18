@@ -25,6 +25,9 @@ class LoginViewController: NSViewController {
     @IBAction func clickLoginButton(_ sender: Any) {
         let homeController = NSStoryboard.init(name: NSStoryboard.Name(rawValue: "Home"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier.init(rawValue: "homeWindow")) as! HomeWindowController
         
+        let appDelegate = NSApp.delegate as! AppDelegate
+        appDelegate.homeWindowController = homeController
+        
         homeController.window?.makeKeyAndOrderFront(nil)
         view.window?.close()
         
