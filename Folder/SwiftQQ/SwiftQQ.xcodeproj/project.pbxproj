@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D350D425B375B53389E4ADEA /* Pods_SwiftQQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DECC76987C9D2E6DB8E306A /* Pods_SwiftQQ.framework */; };
 		D8822D682037EE5000B2DA7B /* HoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8822D672037EE5000B2DA7B /* HoverImageView.swift */; };
 		D8822D6A20380EFE00B2DA7B /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8822D6920380EFE00B2DA7B /* HoverButton.swift */; };
 		D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835032036D80A0074DB72 /* LoginWindowController.swift */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DECC76987C9D2E6DB8E306A /* Pods_SwiftQQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftQQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A488EF08E26BC070F364F0E0 /* Pods-SwiftQQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftQQ/Pods-SwiftQQ.release.xcconfig"; sourceTree = "<group>"; };
 		D8822D672037EE5000B2DA7B /* HoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverImageView.swift; sourceTree = "<group>"; };
 		D8822D6920380EFE00B2DA7B /* HoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
 		D8A835032036D80A0074DB72 /* LoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWindowController.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		D8DC66D6203867CF00F8335A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D8DC66D82038682B00F8335A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8DC66DA2038683D00F8335A /* HomeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWindowController.swift; sourceTree = "<group>"; };
+		E962D5783B63F821CE9A1168 /* Pods-SwiftQQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftQQ/Pods-SwiftQQ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +56,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D350D425B375B53389E4ADEA /* Pods_SwiftQQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB7CA6964FFF8382DCE85044 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DECC76987C9D2E6DB8E306A /* Pods_SwiftQQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8822D6B2038118F00B2DA7B /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +97,8 @@
 			children = (
 				D8B00B0420353C9D005F53AD /* SwiftQQ */,
 				D8B00B0320353C9D005F53AD /* Products */,
+				F44ECFE606900EF94A01625F /* Pods */,
+				AB7CA6964FFF8382DCE85044 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +146,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		F44ECFE606900EF94A01625F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E962D5783B63F821CE9A1168 /* Pods-SwiftQQ.debug.xcconfig */,
+				A488EF08E26BC070F364F0E0 /* Pods-SwiftQQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8B00B1220353C9D005F53AD /* Build configuration list for PBXNativeTarget "SwiftQQ" */;
 			buildPhases = (
+				02F4F51A5A2D305C49C5166C /* [CP] Check Pods Manifest.lock */,
 				D8B00AFE20353C9D005F53AD /* Sources */,
 				D8B00AFF20353C9D005F53AD /* Frameworks */,
 				D8B00B0020353C9D005F53AD /* Resources */,
+				B7FC4F0175B93F3D1267D8D2 /* [CP] Embed Pods Frameworks */,
+				694F100AF63E157849E952D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +225,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02F4F51A5A2D305C49C5166C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftQQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		694F100AF63E157849E952D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftQQ/Pods-SwiftQQ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7FC4F0175B93F3D1267D8D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftQQ/Pods-SwiftQQ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftQQ/Pods-SwiftQQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8B00AFE20353C9D005F53AD /* Sources */ = {
@@ -340,6 +421,7 @@
 		};
 		D8B00B1320353C9D005F53AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E962D5783B63F821CE9A1168 /* Pods-SwiftQQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftQQ/SwiftQQ.entitlements;
@@ -355,6 +437,7 @@
 		};
 		D8B00B1420353C9D005F53AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A488EF08E26BC070F364F0E0 /* Pods-SwiftQQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftQQ/SwiftQQ.entitlements;
