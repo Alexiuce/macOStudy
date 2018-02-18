@@ -20,6 +20,9 @@
 		D8B00B0D20353C9D005F53AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B00B0B20353C9D005F53AD /* Main.storyboard */; };
 		D8B00B1820355E47005F53AD /* LoginOKSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8B00B1620355E47005F53AD /* LoginOKSound.mp3 */; };
 		D8B00B1920355E47005F53AD /* SettingViewSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8B00B1720355E47005F53AD /* SettingViewSound.wav */; };
+		D8DC66D7203867CF00F8335A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DC66D6203867CF00F8335A /* Home.storyboard */; };
+		D8DC66D92038682B00F8335A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC66D82038682B00F8335A /* HomeViewController.swift */; };
+		D8DC66DB2038683D00F8335A /* HomeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC66DA2038683D00F8335A /* HomeWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		D8B00B0F20353C9D005F53AD /* SwiftQQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftQQ.entitlements; sourceTree = "<group>"; };
 		D8B00B1620355E47005F53AD /* LoginOKSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LoginOKSound.mp3; sourceTree = "<group>"; };
 		D8B00B1720355E47005F53AD /* SettingViewSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SettingViewSound.wav; sourceTree = "<group>"; };
+		D8DC66D6203867CF00F8335A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D8DC66D82038682B00F8335A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D8DC66DA2038683D00F8335A /* HomeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		D8B00B0420353C9D005F53AD /* SwiftQQ */ = {
 			isa = PBXGroup;
 			children = (
+				D8DC66D52038679B00F8335A /* Home */,
 				D8822D6B2038118F00B2DA7B /* Catagory */,
 				D8A835002036D7B50074DB72 /* Login */,
 				D8B00B1520355E34005F53AD /* resource */,
@@ -112,6 +119,16 @@
 				D8B00B1720355E47005F53AD /* SettingViewSound.wav */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		D8DC66D52038679B00F8335A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8DC66D6203867CF00F8335A /* Home.storyboard */,
+				D8DC66D82038682B00F8335A /* HomeViewController.swift */,
+				D8DC66DA2038683D00F8335A /* HomeWindowController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B00B0A20353C9D005F53AD /* Assets.xcassets in Resources */,
+				D8DC66D7203867CF00F8335A /* Home.storyboard in Resources */,
 				D8B00B1820355E47005F53AD /* LoginOKSound.mp3 in Resources */,
 				D8B00B1920355E47005F53AD /* SettingViewSound.wav in Resources */,
 				D8B00B0D20353C9D005F53AD /* Main.storyboard in Resources */,
@@ -191,8 +209,10 @@
 				D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */,
 				D8822D6A20380EFE00B2DA7B /* HoverButton.swift in Sources */,
 				D8B00B0820353C9D005F53AD /* ViewController.swift in Sources */,
+				D8DC66D92038682B00F8335A /* HomeViewController.swift in Sources */,
 				D8A8350C2036F6D10074DB72 /* HeadImageView.swift in Sources */,
 				D8B00B0620353C9D005F53AD /* AppDelegate.swift in Sources */,
+				D8DC66DB2038683D00F8335A /* HomeWindowController.swift in Sources */,
 				D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */,
 				D8A8350A2036F0880074DB72 /* LoginWindow.swift in Sources */,
 			);

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="BJt-IR-4ex">
+            <objects>
+                <windowController storyboardIdentifier="homeWindow" id="L9C-b6-FNG" customClass="HomeWindowController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="2pC-JS-C0r">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+                        <connections>
+                            <outlet property="delegate" destination="L9C-b6-FNG" id="QJg-8G-h2b"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="yzq-HV-ESW" kind="relationship" relationship="window.shadowedContentViewController" id="gpb-5o-fvN"/>
+                    </connections>
+                </windowController>
+                <customObject id="CtF-aI-mcx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="97"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="ebC-XT-N3P">
+            <objects>
+                <viewController id="yzq-HV-ESW" customClass="HomeViewController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="c6Z-aP-Rzl">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="TEq-qJ-JOR">
+                                <rect key="frame" x="0.0" y="202" width="480" height="68"/>
+                                <subviews>
+                                    <visualEffectView blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="E6W-jW-ozQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="68"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="B5K-Pw-tAl"/>
+                                    <constraint firstAttribute="trailing" secondItem="E6W-jW-ozQ" secondAttribute="trailing" id="Bb8-Ve-3w1"/>
+                                    <constraint firstItem="E6W-jW-ozQ" firstAttribute="top" secondItem="TEq-qJ-JOR" secondAttribute="top" id="aQE-25-OtX"/>
+                                    <constraint firstItem="E6W-jW-ozQ" firstAttribute="leading" secondItem="TEq-qJ-JOR" secondAttribute="leading" id="c5e-Iu-VIe"/>
+                                    <constraint firstAttribute="bottom" secondItem="E6W-jW-ozQ" secondAttribute="bottom" id="kzs-34-cjt"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="tVH-NT-5KE">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="202"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tVH-NT-5KE" firstAttribute="leading" secondItem="c6Z-aP-Rzl" secondAttribute="leading" id="Fi8-9O-C6f"/>
+                            <constraint firstAttribute="trailing" secondItem="TEq-qJ-JOR" secondAttribute="trailing" id="NUT-qU-9iD"/>
+                            <constraint firstAttribute="bottom" secondItem="tVH-NT-5KE" secondAttribute="bottom" id="PlF-2R-kyT"/>
+                            <constraint firstItem="TEq-qJ-JOR" firstAttribute="top" secondItem="c6Z-aP-Rzl" secondAttribute="top" id="jAD-nY-cDb"/>
+                            <constraint firstAttribute="trailing" secondItem="tVH-NT-5KE" secondAttribute="trailing" id="ljx-vi-SX3"/>
+                            <constraint firstItem="TEq-qJ-JOR" firstAttribute="leading" secondItem="c6Z-aP-Rzl" secondAttribute="leading" id="lte-Fc-do0"/>
+                            <constraint firstItem="tVH-NT-5KE" firstAttribute="top" secondItem="TEq-qJ-JOR" secondAttribute="bottom" id="phk-C8-9y1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="3xm-rC-wb1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="493"/>
+        </scene>
+    </scenes>
+</document>

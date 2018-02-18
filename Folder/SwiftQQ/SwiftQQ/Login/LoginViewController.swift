@@ -21,6 +21,15 @@ class LoginViewController: NSViewController {
         headButton.layer?.cornerRadius = headButton.bounds.size.width * 0.5
  
     }
+    
+    @IBAction func clickLoginButton(_ sender: Any) {
+        let homeController = NSStoryboard.init(name: NSStoryboard.Name(rawValue: "Home"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier.init(rawValue: "homeWindow")) as! HomeWindowController
+        
+        homeController.window?.makeKeyAndOrderFront(nil)
+        view.window?.close()
+        
+    }
+    
 }
 
 extension LoginViewController: NSTextFieldDelegate{

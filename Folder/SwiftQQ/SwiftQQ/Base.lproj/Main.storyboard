@@ -791,6 +791,9 @@
                                     <behavior key="behavior" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="clickLoginButton:" target="FJv-ez-pQH" id="Uz2-DF-4q1"/>
+                                </connections>
                             </button>
                             <button wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLY-jC-q88">
                                 <rect key="frame" x="73" y="194" width="93" height="93"/>
