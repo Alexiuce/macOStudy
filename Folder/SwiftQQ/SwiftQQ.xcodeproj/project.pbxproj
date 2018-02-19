@@ -15,6 +15,12 @@
 		D8A835082036E7440074DB72 /* BGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835072036E7440074DB72 /* BGImageView.swift */; };
 		D8A8350A2036F0880074DB72 /* LoginWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835092036F0880074DB72 /* LoginWindow.swift */; };
 		D8A8350C2036F6D10074DB72 /* HeadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A8350B2036F6D10074DB72 /* HeadImageView.swift */; };
+		D8AF63B120399E0500C01956 /* message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AF63B020399E0500C01956 /* message.storyboard */; };
+		D8AF63B320399E3900C01956 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF63B220399E3900C01956 /* MessageViewController.swift */; };
+		D8AF63B520399E6A00C01956 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF63B420399E6A00C01956 /* ContactViewController.swift */; };
+		D8AF63B720399E7900C01956 /* contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AF63B620399E7900C01956 /* contact.storyboard */; };
+		D8AF63B920399E9500C01956 /* more.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AF63B820399E9500C01956 /* more.storyboard */; };
+		D8AF63BB20399EA700C01956 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF63BA20399EA700C01956 /* MoreViewController.swift */; };
 		D8B00B0620353C9D005F53AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00B0520353C9D005F53AD /* AppDelegate.swift */; };
 		D8B00B0820353C9D005F53AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B00B0720353C9D005F53AD /* ViewController.swift */; };
 		D8B00B0A20353C9D005F53AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B00B0920353C9D005F53AD /* Assets.xcassets */; };
@@ -36,6 +42,12 @@
 		D8A835072036E7440074DB72 /* BGImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImageView.swift; sourceTree = "<group>"; };
 		D8A835092036F0880074DB72 /* LoginWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWindow.swift; sourceTree = "<group>"; };
 		D8A8350B2036F6D10074DB72 /* HeadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadImageView.swift; sourceTree = "<group>"; };
+		D8AF63B020399E0500C01956 /* message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = message.storyboard; sourceTree = "<group>"; };
+		D8AF63B220399E3900C01956 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		D8AF63B420399E6A00C01956 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		D8AF63B620399E7900C01956 /* contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = contact.storyboard; sourceTree = "<group>"; };
+		D8AF63B820399E9500C01956 /* more.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = more.storyboard; sourceTree = "<group>"; };
+		D8AF63BA20399EA700C01956 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		D8B00B0220353C9D005F53AD /* SwiftQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B00B0520353C9D005F53AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8B00B0720353C9D005F53AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +104,33 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		D8AF63AD20399DD700C01956 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D8AF63B020399E0500C01956 /* message.storyboard */,
+				D8AF63B220399E3900C01956 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		D8AF63AE20399DE300C01956 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				D8AF63B420399E6A00C01956 /* ContactViewController.swift */,
+				D8AF63B620399E7900C01956 /* contact.storyboard */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		D8AF63AF20399DEC00C01956 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				D8AF63B820399E9500C01956 /* more.storyboard */,
+				D8AF63BA20399EA700C01956 /* MoreViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
 		D8B00AF920353C9D005F53AD = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +152,9 @@
 		D8B00B0420353C9D005F53AD /* SwiftQQ */ = {
 			isa = PBXGroup;
 			children = (
+				D8AF63AF20399DEC00C01956 /* More */,
+				D8AF63AE20399DE300C01956 /* Contact */,
+				D8AF63AD20399DD700C01956 /* Message */,
 				D8DC66D52038679B00F8335A /* Home */,
 				D8822D6B2038118F00B2DA7B /* Catagory */,
 				D8A835002036D7B50074DB72 /* Login */,
@@ -217,9 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B00B0A20353C9D005F53AD /* Assets.xcassets in Resources */,
+				D8AF63B920399E9500C01956 /* more.storyboard in Resources */,
 				D8DC66D7203867CF00F8335A /* Home.storyboard in Resources */,
 				D8B00B1820355E47005F53AD /* LoginOKSound.mp3 in Resources */,
+				D8AF63B720399E7900C01956 /* contact.storyboard in Resources */,
 				D8B00B1920355E47005F53AD /* SettingViewSound.wav in Resources */,
+				D8AF63B120399E0500C01956 /* message.storyboard in Resources */,
 				D8B00B0D20353C9D005F53AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,14 +332,17 @@
 			files = (
 				D8A835082036E7440074DB72 /* BGImageView.swift in Sources */,
 				D8822D682037EE5000B2DA7B /* HoverImageView.swift in Sources */,
+				D8AF63B520399E6A00C01956 /* ContactViewController.swift in Sources */,
 				D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */,
 				D8822D6A20380EFE00B2DA7B /* HoverButton.swift in Sources */,
 				D8B00B0820353C9D005F53AD /* ViewController.swift in Sources */,
 				D8DC66D92038682B00F8335A /* HomeViewController.swift in Sources */,
+				D8AF63BB20399EA700C01956 /* MoreViewController.swift in Sources */,
 				D8A8350C2036F6D10074DB72 /* HeadImageView.swift in Sources */,
 				D8B00B0620353C9D005F53AD /* AppDelegate.swift in Sources */,
 				D8DC66DB2038683D00F8335A /* HomeWindowController.swift in Sources */,
 				D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */,
+				D8AF63B320399E3900C01956 /* MessageViewController.swift in Sources */,
 				D8A8350A2036F0880074DB72 /* LoginWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
