@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D350D425B375B53389E4ADEA /* Pods_SwiftQQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DECC76987C9D2E6DB8E306A /* Pods_SwiftQQ.framework */; };
+		D81679ED203AB91B0069ABB1 /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81679EB203AB91B0069ABB1 /* CollectionItem.swift */; };
+		D81679EE203AB91B0069ABB1 /* CollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81679EC203AB91B0069ABB1 /* CollectionItem.xib */; };
+		D81679F1203AC4A10069ABB1 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81679F0203AC4A10069ABB1 /* MessageModel.swift */; };
 		D8822D682037EE5000B2DA7B /* HoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8822D672037EE5000B2DA7B /* HoverImageView.swift */; };
 		D8822D6A20380EFE00B2DA7B /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8822D6920380EFE00B2DA7B /* HoverButton.swift */; };
+		D89C58A2203A779600B3AF60 /* BaseSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C58A1203A779600B3AF60 /* BaseSplitView.swift */; };
+		D89C58A4203A829C00B3AF60 /* BaseSplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C58A3203A829C00B3AF60 /* BaseSplitViewDelegate.swift */; };
+		D89C58A6203A847600B3AF60 /* SubSplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C58A5203A847600B3AF60 /* SubSplitViewDelegate.swift */; };
 		D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835032036D80A0074DB72 /* LoginWindowController.swift */; };
 		D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835052036D8270074DB72 /* LoginViewController.swift */; };
 		D8A835082036E7440074DB72 /* BGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A835072036E7440074DB72 /* BGImageView.swift */; };
@@ -35,8 +41,14 @@
 /* Begin PBXFileReference section */
 		0DECC76987C9D2E6DB8E306A /* Pods_SwiftQQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftQQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A488EF08E26BC070F364F0E0 /* Pods-SwiftQQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftQQ/Pods-SwiftQQ.release.xcconfig"; sourceTree = "<group>"; };
+		D81679EB203AB91B0069ABB1 /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
+		D81679EC203AB91B0069ABB1 /* CollectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionItem.xib; sourceTree = "<group>"; };
+		D81679F0203AC4A10069ABB1 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		D8822D672037EE5000B2DA7B /* HoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverImageView.swift; sourceTree = "<group>"; };
 		D8822D6920380EFE00B2DA7B /* HoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
+		D89C58A1203A779600B3AF60 /* BaseSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSplitView.swift; sourceTree = "<group>"; };
+		D89C58A3203A829C00B3AF60 /* BaseSplitViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSplitViewDelegate.swift; sourceTree = "<group>"; };
+		D89C58A5203A847600B3AF60 /* SubSplitViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSplitViewDelegate.swift; sourceTree = "<group>"; };
 		D8A835032036D80A0074DB72 /* LoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWindowController.swift; sourceTree = "<group>"; };
 		D8A835052036D8270074DB72 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D8A835072036E7440074DB72 /* BGImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImageView.swift; sourceTree = "<group>"; };
@@ -83,11 +95,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D81679EF203AC4890069ABB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D81679F0203AC4A10069ABB1 /* MessageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D8822D6B2038118F00B2DA7B /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Catagory;
+			sourceTree = "<group>";
+		};
+		D89C58A0203A776F00B3AF60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D89C58A1203A779600B3AF60 /* BaseSplitView.swift */,
+				D89C58A3203A829C00B3AF60 /* BaseSplitViewDelegate.swift */,
+				D89C58A5203A847600B3AF60 /* SubSplitViewDelegate.swift */,
+				D81679EB203AB91B0069ABB1 /* CollectionItem.swift */,
+				D81679EC203AB91B0069ABB1 /* CollectionItem.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D8A835002036D7B50074DB72 /* Login */ = {
@@ -107,6 +139,8 @@
 		D8AF63AD20399DD700C01956 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				D81679EF203AC4890069ABB1 /* Models */,
+				D89C58A0203A776F00B3AF60 /* Views */,
 				D8AF63B020399E0500C01956 /* message.storyboard */,
 				D8AF63B220399E3900C01956 /* MessageViewController.swift */,
 			);
@@ -266,6 +300,7 @@
 				D8B00B1920355E47005F53AD /* SettingViewSound.wav in Resources */,
 				D8AF63B120399E0500C01956 /* message.storyboard in Resources */,
 				D8B00B0D20353C9D005F53AD /* Main.storyboard in Resources */,
+				D81679EE203AB91B0069ABB1 /* CollectionItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,12 +368,17 @@
 				D8A835082036E7440074DB72 /* BGImageView.swift in Sources */,
 				D8822D682037EE5000B2DA7B /* HoverImageView.swift in Sources */,
 				D8AF63B520399E6A00C01956 /* ContactViewController.swift in Sources */,
+				D89C58A4203A829C00B3AF60 /* BaseSplitViewDelegate.swift in Sources */,
 				D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */,
 				D8822D6A20380EFE00B2DA7B /* HoverButton.swift in Sources */,
+				D89C58A2203A779600B3AF60 /* BaseSplitView.swift in Sources */,
 				D8B00B0820353C9D005F53AD /* ViewController.swift in Sources */,
+				D81679ED203AB91B0069ABB1 /* CollectionItem.swift in Sources */,
 				D8DC66D92038682B00F8335A /* HomeViewController.swift in Sources */,
 				D8AF63BB20399EA700C01956 /* MoreViewController.swift in Sources */,
 				D8A8350C2036F6D10074DB72 /* HeadImageView.swift in Sources */,
+				D81679F1203AC4A10069ABB1 /* MessageModel.swift in Sources */,
+				D89C58A6203A847600B3AF60 /* SubSplitViewDelegate.swift in Sources */,
 				D8B00B0620353C9D005F53AD /* AppDelegate.swift in Sources */,
 				D8DC66DB2038683D00F8335A /* HomeWindowController.swift in Sources */,
 				D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */,

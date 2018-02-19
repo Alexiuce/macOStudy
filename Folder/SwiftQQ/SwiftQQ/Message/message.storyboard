@@ -13,17 +13,168 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feB-Ny-hcP">
-                                <rect key="frame" x="207" y="141" width="59" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Message" id="g45-Mj-n7b">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                            <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PnC-OZ-kXD" customClass="BaseSplitView" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <subviews>
+                                    <customView id="8XC-PD-NHK">
+                                        <rect key="frame" x="0.0" y="0.0" width="102" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ct-u2-BHw">
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="300"/>
+                                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Q0p-jy-gVa">
+                                                    <rect key="frame" x="1" y="1" width="100" height="298"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <collectionView selectable="YES" id="DVV-Io-AvH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="158"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="YF4-wA-eU9">
+                                                                <size key="itemSize" width="50" height="50"/>
+                                                            </collectionViewFlowLayout>
+                                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            <connections>
+                                                                <outlet property="dataSource" destination="Wf6-Rw-I7y" id="o3W-WP-hES"/>
+                                                                <outlet property="delegate" destination="Wf6-Rw-I7y" id="N9i-8L-3Jp"/>
+                                                            </connections>
+                                                        </collectionView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </clipView>
+                                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="bpL-6e-eT8">
+                                                    <rect key="frame" x="1" y="283" width="100" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </scroller>
+                                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="fcO-IH-iAF">
+                                                    <rect key="frame" x="87" y="1" width="16" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </scroller>
+                                            </scrollView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="9ct-u2-BHw" secondAttribute="bottom" id="P7Y-t3-klX"/>
+                                            <constraint firstAttribute="trailing" secondItem="9ct-u2-BHw" secondAttribute="trailing" id="YbB-RM-gbj"/>
+                                            <constraint firstItem="9ct-u2-BHw" firstAttribute="leading" secondItem="8XC-PD-NHK" secondAttribute="leading" id="b2c-9R-YjV"/>
+                                            <constraint firstItem="9ct-u2-BHw" firstAttribute="top" secondItem="8XC-PD-NHK" secondAttribute="top" id="h0d-D7-SfT"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView id="h96-n7-y82">
+                                        <rect key="frame" x="112" y="0.0" width="338" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" translatesAutoresizingMaskIntoConstraints="NO" id="rva-4d-qMY">
+                                                <rect key="frame" x="0.0" y="0.0" width="338" height="300"/>
+                                                <subviews>
+                                                    <customView id="yLE-qF-m1E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="338" height="125"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9xG-Gd-aRM">
+                                                                <rect key="frame" x="289" y="14" width="37" height="17"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="syL-kh-Yq4">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
+                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RHh-eG-2yH">
+                                                                <rect key="frame" x="291" y="88" width="37" height="17"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="HyY-MO-X6V">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
+                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="McO-rQ-ZhJ">
+                                                                <rect key="frame" x="12" y="98" width="37" height="17"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="RCR-G0-uh2">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="RHh-eG-2yH" secondAttribute="trailing" constant="12" id="B5s-Jd-bSN"/>
+                                                            <constraint firstItem="McO-rQ-ZhJ" firstAttribute="top" secondItem="yLE-qF-m1E" secondAttribute="top" constant="10" id="Ge4-lb-Z56"/>
+                                                            <constraint firstAttribute="bottom" secondItem="9xG-Gd-aRM" secondAttribute="bottom" constant="14" id="QfJ-Mm-XdQ"/>
+                                                            <constraint firstItem="RHh-eG-2yH" firstAttribute="top" secondItem="yLE-qF-m1E" secondAttribute="top" constant="20" id="WCN-md-d8m"/>
+                                                            <constraint firstItem="McO-rQ-ZhJ" firstAttribute="leading" secondItem="yLE-qF-m1E" secondAttribute="leading" constant="14" id="b0o-2w-n59"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9xG-Gd-aRM" secondAttribute="trailing" constant="14" id="mPg-o2-Qxh"/>
+                                                        </constraints>
+                                                    </customView>
+                                                    <customView id="wmE-C7-0Te">
+                                                        <rect key="frame" x="0.0" y="135" width="338" height="165"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b2X-tK-KjF">
+                                                                <rect key="frame" x="283" y="137" width="37" height="17"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="vbo-EF-SyC">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
+                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mY8-Mu-y7N">
+                                                                <rect key="frame" x="283" y="7" width="37" height="17"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="ze8-Gb-y1U">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
+                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8xn-8k-r4P">
+                                                                <rect key="frame" x="20" y="128" width="37" height="17"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="S8k-A3-9UJ">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="8xn-8k-r4P" firstAttribute="leading" secondItem="wmE-C7-0Te" secondAttribute="leading" constant="22" id="18h-jj-17h"/>
+                                                            <constraint firstItem="b2X-tK-KjF" firstAttribute="top" secondItem="wmE-C7-0Te" secondAttribute="top" constant="11" id="4tG-Qm-cnQ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mY8-Mu-y7N" secondAttribute="trailing" constant="20" id="6bx-9R-wBK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="b2X-tK-KjF" secondAttribute="trailing" constant="20" id="9Ik-sT-FJy"/>
+                                                            <constraint firstItem="8xn-8k-r4P" firstAttribute="top" secondItem="wmE-C7-0Te" secondAttribute="top" constant="20" id="XBe-JH-wjF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="mY8-Mu-y7N" secondAttribute="bottom" constant="7" id="g1v-26-mLm"/>
+                                                        </constraints>
+                                                    </customView>
+                                                </subviews>
+                                                <holdingPriorities>
+                                                    <real value="250"/>
+                                                    <real value="250"/>
+                                                </holdingPriorities>
+                                            </splitView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="rva-4d-qMY" secondAttribute="trailing" id="0Kv-q8-w8P"/>
+                                            <constraint firstItem="rva-4d-qMY" firstAttribute="leading" secondItem="h96-n7-y82" secondAttribute="leading" id="b2g-cN-ll1"/>
+                                            <constraint firstItem="rva-4d-qMY" firstAttribute="top" secondItem="h96-n7-y82" secondAttribute="top" id="htZ-aI-AiS"/>
+                                            <constraint firstAttribute="bottom" secondItem="rva-4d-qMY" secondAttribute="bottom" id="nPm-W2-r1g"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <holdingPriorities>
+                                    <real value="250"/>
+                                    <real value="250"/>
+                                </holdingPriorities>
+                            </splitView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="PnC-OZ-kXD" firstAttribute="top" secondItem="L1z-jz-3L0" secondAttribute="top" id="1DJ-88-q3L"/>
+                            <constraint firstItem="PnC-OZ-kXD" firstAttribute="leading" secondItem="L1z-jz-3L0" secondAttribute="leading" id="Zj8-nU-ujG"/>
+                            <constraint firstAttribute="bottom" secondItem="PnC-OZ-kXD" secondAttribute="bottom" id="bPQ-Ys-hYQ"/>
+                            <constraint firstAttribute="trailing" secondItem="PnC-OZ-kXD" secondAttribute="trailing" id="ejF-Bz-Vqe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="baseSplitView" destination="PnC-OZ-kXD" id="pYV-Uy-iNr"/>
+                        <outlet property="collectionFlowLayout" destination="YF4-wA-eU9" id="V5F-Bz-89A"/>
+                        <outlet property="collectionView" destination="DVV-Io-AvH" id="Xfl-k7-0fs"/>
+                        <outlet property="subSplitView" destination="rva-4d-qMY" id="8ha-UH-TUL"/>
+                    </connections>
                 </viewController>
                 <customObject id="Sdu-pU-60g" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
