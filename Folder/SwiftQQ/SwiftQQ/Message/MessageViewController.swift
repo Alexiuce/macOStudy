@@ -15,7 +15,14 @@ class MessageViewController: NSViewController {
     
     @IBOutlet weak var collectionFlowLayout: NSCollectionViewFlowLayout!
     
+    @IBOutlet weak var msgTopView: NSView!    // 右侧顶部视图
+    @IBOutlet weak var topNameLabel: NSTextField!  // 顶部视图用户名称
+    
+    @IBOutlet weak var msgTableView: NSTableView!
+    
     var messageData = [MessageModel]()   // 消息数组
+    
+    var chatArray = [ChatModel]()
     
     let baseSplitViewDelegate = BaseSplitViewDelegate()
     let subSplitViewDelegate = SubSplitViewDelegate()
@@ -49,6 +56,10 @@ extension MessageViewController{
         messageData.append(msgData2)
         messageData.append(msgData3)
         messageData.append(msgData4)
+        // 2. 初始化聊天数据
+        let chat1 = ChatModel(icon: "test1", content: "hahahdlakjdf")
+        chatArray.append(chat1)
+        
     }
     fileprivate func setupUI(){
         baseSplitView.delegate = baseSplitViewDelegate
@@ -56,10 +67,12 @@ extension MessageViewController{
         
         // 设置CollectionView
         configCollectionView()
+        // 设置右侧消息视图
+        configMessageView()
     }
 }
 
-// MARK:
+// MARK:NSCollectionViewDelegate,NSCollectionViewDataSource
 extension MessageViewController: NSCollectionViewDelegate,NSCollectionViewDataSource{
     // 每组有多少行
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -72,6 +85,17 @@ extension MessageViewController: NSCollectionViewDelegate,NSCollectionViewDataSo
         return item
     }
 }
+// MARK: NSTableViewDelegate, NSTableViewDataSource
+extension MessageViewController: NSTableViewDelegate, NSTableViewDataSource{
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return chatArray.count
+    }
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier.init("msgCell"), owner: self) as! MsgCellView
+        cell.dataModel = chatArray[row]
+        return cell
+    }
+}
 
 // MARK: 自定义方法
 extension MessageViewController{
@@ -82,6 +106,13 @@ extension MessageViewController{
         let itemNib = NSNib(nibNamed: NSNib.Name.init("CollectionItem"), bundle: nil)
         collectionView.register(itemNib, forItemWithIdentifier: NSUserInterfaceItemIdentifier.init("messageItem"))
         baseSplitViewDelegate.layout = collectionFlowLayout
+    }
+    // 设置消息
+    fileprivate func  configMessageView(){
+        msgTopView.layer?.backgroundColor = NSColor.lightGray.cgColor
+        topNameLabel.stringValue = "hello"
+        
+        msgTableView.rowHeight = 100
     }
 }
 

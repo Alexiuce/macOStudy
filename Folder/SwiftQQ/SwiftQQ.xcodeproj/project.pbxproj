@@ -11,6 +11,8 @@
 		D81679ED203AB91B0069ABB1 /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81679EB203AB91B0069ABB1 /* CollectionItem.swift */; };
 		D81679EE203AB91B0069ABB1 /* CollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81679EC203AB91B0069ABB1 /* CollectionItem.xib */; };
 		D81679F1203AC4A10069ABB1 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81679F0203AC4A10069ABB1 /* MessageModel.swift */; };
+		D8167A00203AE4660069ABB1 /* MsgCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81679FF203AE4660069ABB1 /* MsgCellView.swift */; };
+		D8167A02203AE6FF0069ABB1 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8167A01203AE6FF0069ABB1 /* ChatModel.swift */; };
 		D8822D682037EE5000B2DA7B /* HoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8822D672037EE5000B2DA7B /* HoverImageView.swift */; };
 		D8822D6A20380EFE00B2DA7B /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8822D6920380EFE00B2DA7B /* HoverButton.swift */; };
 		D89C58A2203A779600B3AF60 /* BaseSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C58A1203A779600B3AF60 /* BaseSplitView.swift */; };
@@ -44,6 +46,8 @@
 		D81679EB203AB91B0069ABB1 /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
 		D81679EC203AB91B0069ABB1 /* CollectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionItem.xib; sourceTree = "<group>"; };
 		D81679F0203AC4A10069ABB1 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		D81679FF203AE4660069ABB1 /* MsgCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgCellView.swift; sourceTree = "<group>"; };
+		D8167A01203AE6FF0069ABB1 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		D8822D672037EE5000B2DA7B /* HoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverImageView.swift; sourceTree = "<group>"; };
 		D8822D6920380EFE00B2DA7B /* HoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
 		D89C58A1203A779600B3AF60 /* BaseSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSplitView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D81679F0203AC4A10069ABB1 /* MessageModel.swift */,
+				D8167A01203AE6FF0069ABB1 /* ChatModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 				D89C58A5203A847600B3AF60 /* SubSplitViewDelegate.swift */,
 				D81679EB203AB91B0069ABB1 /* CollectionItem.swift */,
 				D81679EC203AB91B0069ABB1 /* CollectionItem.xib */,
+				D81679FF203AE4660069ABB1 /* MsgCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,6 +377,7 @@
 				D89C58A4203A829C00B3AF60 /* BaseSplitViewDelegate.swift in Sources */,
 				D8A835062036D8270074DB72 /* LoginViewController.swift in Sources */,
 				D8822D6A20380EFE00B2DA7B /* HoverButton.swift in Sources */,
+				D8167A00203AE4660069ABB1 /* MsgCellView.swift in Sources */,
 				D89C58A2203A779600B3AF60 /* BaseSplitView.swift in Sources */,
 				D8B00B0820353C9D005F53AD /* ViewController.swift in Sources */,
 				D81679ED203AB91B0069ABB1 /* CollectionItem.swift in Sources */,
@@ -381,6 +388,7 @@
 				D89C58A6203A847600B3AF60 /* SubSplitViewDelegate.swift in Sources */,
 				D8B00B0620353C9D005F53AD /* AppDelegate.swift in Sources */,
 				D8DC66DB2038683D00F8335A /* HomeWindowController.swift in Sources */,
+				D8167A02203AE6FF0069ABB1 /* ChatModel.swift in Sources */,
 				D8A835042036D80A0074DB72 /* LoginWindowController.swift in Sources */,
 				D8AF63B320399E3900C01956 /* MessageViewController.swift in Sources */,
 				D8A8350A2036F0880074DB72 /* LoginWindow.swift in Sources */,
