@@ -57,8 +57,10 @@ extension MessageViewController{
         messageData.append(msgData3)
         messageData.append(msgData4)
         // 2. 初始化聊天数据
-        let chat1 = ChatModel(icon: "test1", content: "hahahdlakjdf")
+        let chat1 = ChatModel(icon: "test1", content: "hahahdlakjdf", sourceType: .me)
+        let chat2 = ChatModel(icon: "test", content: "new happy year", sourceType: .other)
         chatArray.append(chat1)
+        chatArray.append(chat2)
         
     }
     fileprivate func setupUI(){

@@ -117,29 +117,21 @@
                                                                                             <rect key="frame" x="1" y="1" width="333" height="55"/>
                                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                             <subviews>
-                                                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32Z-Bv-9HC">
+                                                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32Z-Bv-9HC">
                                                                                                     <rect key="frame" x="301" y="12" width="29" height="31"/>
-                                                                                                    <constraints>
-                                                                                                        <constraint firstAttribute="height" constant="31" id="QCB-HE-2ud"/>
-                                                                                                        <constraint firstAttribute="width" constant="29" id="VZC-56-ygY"/>
-                                                                                                    </constraints>
+                                                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="test" id="nh4-LI-ICd"/>
                                                                                                 </imageView>
-                                                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="120" translatesAutoresizingMaskIntoConstraints="NO" id="eC1-Si-DXe">
-                                                                                                    <rect key="frame" x="162" y="-23" width="124" height="102"/>
-                                                                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="askdfjlaskdjf;asldkfj;saldkfj;asldkfjas;ldkfjs;aldkfjs;alkdfjs;adlkfjs;aldkfjsa;dlkfjas;ldkfja;sldkfjs;adlkfj;sdf" id="fLJ-hz-lvr">
+                                                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" preferredMaxLayoutWidth="120" translatesAutoresizingMaskIntoConstraints="NO" id="eC1-Si-DXe">
+                                                                                                    <rect key="frame" x="163" y="11" width="123" height="34"/>
+                                                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="askdfjlaskdjf;asldkfj;saldkfj;asl" id="fLJ-hz-lvr">
                                                                                                         <font key="font" metaFont="system"/>
                                                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                                                     </textFieldCell>
                                                                                                 </textField>
                                                                                             </subviews>
-                                                                                            <constraints>
-                                                                                                <constraint firstItem="eC1-Si-DXe" firstAttribute="centerY" secondItem="8zC-Yt-l9t" secondAttribute="centerY" id="NWA-zt-T8s"/>
-                                                                                                <constraint firstItem="32Z-Bv-9HC" firstAttribute="top" secondItem="8zC-Yt-l9t" secondAttribute="top" constant="12" id="TAr-Jy-pRN"/>
-                                                                                                <constraint firstItem="32Z-Bv-9HC" firstAttribute="leading" secondItem="eC1-Si-DXe" secondAttribute="trailing" constant="17" id="f5H-RJ-t5n"/>
-                                                                                                <constraint firstAttribute="trailing" secondItem="32Z-Bv-9HC" secondAttribute="trailing" constant="3" id="hhu-zr-mnf"/>
-                                                                                            </constraints>
                                                                                             <connections>
                                                                                                 <outlet property="headImageView" destination="32Z-Bv-9HC" id="WjA-i3-cik"/>
                                                                                                 <outlet property="messageTextLabel" destination="eC1-Si-DXe" id="Tmy-5C-YhO"/>
