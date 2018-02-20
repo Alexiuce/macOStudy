@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icon-enter-down.png",
+      "filename" : "cell_checkbox_normal.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icon-enter-down@2x.png",
+      "filename" : "cell_checkbox_normal@2x.png",
       "scale" : "2x"
     },
     {

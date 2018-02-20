@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="yRW-vg-CCc">
+            <objects>
+                <windowController storyboardIdentifier="home" id="fab-2j-Gcf" customClass="HomeWindowController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="vAN-TC-hI3">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="600" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+                        <value key="minSize" type="size" width="600" height="270"/>
+                        <connections>
+                            <outlet property="delegate" destination="fab-2j-Gcf" id="5xC-D2-hqI"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="wzR-dW-mWr" kind="relationship" relationship="window.shadowedContentViewController" id="EXJ-qS-k8q"/>
+                    </connections>
+                </windowController>
+                <customObject id="Q7r-U6-7fq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="-78"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="yeE-qx-SgS">
+            <objects>
+                <viewController id="wzR-dW-mWr" customClass="HomeViewController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Owl-9L-zw6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ks2-hS-FKv">
+                                <rect key="frame" x="0.0" y="218" width="600" height="52"/>
+                                <subviews>
+                                    <visualEffectView blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="7yg-AZ-jhw">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+                                    </visualEffectView>
+                                    <searchField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygg-wj-MGZ">
+                                        <rect key="frame" x="101" y="15" width="109" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" borderStyle="bezel" focusRingType="none" usesSingleLineMode="YES" bezelStyle="round" id="yK9-3M-AVC">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </searchFieldCell>
+                                    </searchField>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="40" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yu8-t8-0zb">
+                                        <rect key="frame" x="218" y="10" width="164" height="32"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aGP-mX-qUU">
+                                                <rect key="frame" x="0.0" y="0.0" width="28" height="32"/>
+                                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="menu-message-normal" imagePosition="overlaps" alignment="center" alternateImage="menu-message-down" imageScaling="proportionallyDown" inset="2" id="wp8-YT-ccW">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="clickMessage:" target="wzR-dW-mWr" id="vqb-1q-R3r"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CVd-DG-mpA">
+                                                <rect key="frame" x="68" y="0.0" width="28" height="32"/>
+                                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="menu-contact-normal" imagePosition="overlaps" alignment="center" alternateImage="menu-contact-down" imageScaling="proportionallyDown" inset="2" id="izd-L6-S6T">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="clickContact:" target="wzR-dW-mWr" id="jNL-yI-iR9"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L9u-gY-wzZ">
+                                                <rect key="frame" x="136" y="0.0" width="28" height="32"/>
+                                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="menu-more-normal" imagePosition="overlaps" alignment="center" alternateImage="menu-more-down" imageScaling="proportionallyDown" inset="2" id="dGD-gJ-14x">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="clickMore:" target="wzR-dW-mWr" id="uOg-Ck-EBD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Ref-du-ml7"/>
+                                            <constraint firstAttribute="width" constant="164" id="ehp-sL-g2L"/>
+                                        </constraints>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7yg-AZ-jhw" firstAttribute="leading" secondItem="Ks2-hS-FKv" secondAttribute="leading" id="2GK-zO-c72"/>
+                                    <constraint firstItem="Yu8-t8-0zb" firstAttribute="centerY" secondItem="Ks2-hS-FKv" secondAttribute="centerY" id="4Qj-5h-q65"/>
+                                    <constraint firstItem="Yu8-t8-0zb" firstAttribute="centerX" secondItem="Ks2-hS-FKv" secondAttribute="centerX" id="DA6-oh-kdY"/>
+                                    <constraint firstAttribute="height" constant="52" id="F9K-9S-YdE"/>
+                                    <constraint firstItem="7yg-AZ-jhw" firstAttribute="top" secondItem="Ks2-hS-FKv" secondAttribute="top" id="Mwo-E6-otV"/>
+                                    <constraint firstAttribute="bottom" secondItem="7yg-AZ-jhw" secondAttribute="bottom" id="d7u-RH-DvP"/>
+                                    <constraint firstAttribute="trailing" secondItem="7yg-AZ-jhw" secondAttribute="trailing" id="tZP-4P-dc8"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="tK5-Ro-xkV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="218"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Ks2-hS-FKv" firstAttribute="top" secondItem="Owl-9L-zw6" secondAttribute="top" id="7m5-5Z-J1h"/>
+                            <constraint firstItem="tK5-Ro-xkV" firstAttribute="top" secondItem="Ks2-hS-FKv" secondAttribute="bottom" id="Kg3-Ib-RXV"/>
+                            <constraint firstItem="Ks2-hS-FKv" firstAttribute="leading" secondItem="Owl-9L-zw6" secondAttribute="leading" id="UQ9-xP-SqK"/>
+                            <constraint firstItem="tK5-Ro-xkV" firstAttribute="leading" secondItem="Owl-9L-zw6" secondAttribute="leading" id="eyt-Sf-Q7e"/>
+                            <constraint firstAttribute="trailing" secondItem="Ks2-hS-FKv" secondAttribute="trailing" id="hIs-HS-G1R"/>
+                            <constraint firstAttribute="trailing" secondItem="tK5-Ro-xkV" secondAttribute="trailing" id="htT-my-iXI"/>
+                            <constraint firstAttribute="bottom" secondItem="tK5-Ro-xkV" secondAttribute="bottom" id="rQt-go-XxI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactButton" destination="CVd-DG-mpA" id="6Qp-pL-b3q"/>
+                        <outlet property="containerView" destination="tK5-Ro-xkV" id="jGe-o1-VN9"/>
+                        <outlet property="messageButton" destination="aGP-mX-qUU" id="ADf-05-EMf"/>
+                        <outlet property="moreButton" destination="L9u-gY-wzZ" id="yzo-qM-0Fh"/>
+                    </connections>
+                </viewController>
+                <customObject id="KID-Po-cKu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="334"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu-contact-down" width="28" height="28"/>
+        <image name="menu-contact-normal" width="28" height="28"/>
+        <image name="menu-message-down" width="28" height="28"/>
+        <image name="menu-message-normal" width="28" height="28"/>
+        <image name="menu-more-down" width="28" height="28"/>
+        <image name="menu-more-normal" width="28" height="28"/>
+    </resources>
+</document>

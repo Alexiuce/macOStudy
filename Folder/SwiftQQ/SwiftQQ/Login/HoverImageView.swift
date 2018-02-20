@@ -3,36 +3,24 @@
 //  SwiftQQ
 //
 //  Created by Alexcai on 2018/2/17.
+//  Copyright © 2018年 Alexcai. All rights reserved.
 //
 
 import Cocoa
 
 class HoverImageView: NSImageView {
-
-    lazy var normalImage: NSImage = {
-        let img = NSImage(named: NSImage.Name(rawValue: "head-normal"))
-        return img!
-    }()
-    
-    lazy var hoverImage : NSImage = {
-        let img = NSImage(named: NSImage.Name(rawValue: "circle-big"))
-        return img!
-    }()
     
     override func awakeFromNib() {
-        super.awakeFromNib()
-        layer?.cornerRadius = bounds.size.width * 0.5
-        
-        // 1. 添加鼠标监听
-        let trackArea = NSTrackingArea(rect: bounds, options: [.activeAlways,.mouseEnteredAndExited], owner: self, userInfo: nil)
+        // 1 添加监听鼠标移入移出
+        let trackArea = NSTrackingArea(rect: bounds, options: [.activeInActiveApp,.mouseEnteredAndExited], owner: self, userInfo: nil)
         addTrackingArea(trackArea)
+    }
+    // 2 .实现鼠标移入移出的方法
+    override func mouseExited(with event: NSEvent) {
+         image = NSImage(named: NSImage.Name(rawValue: "head-normal"))
     }
     
     override func mouseEntered(with event: NSEvent) {
-        image = hoverImage
-    }
-    
-    override func mouseExited(with event: NSEvent) {
-        image = normalImage
+        image = NSImage(named: NSImage.Name(rawValue: "circle-big"))
     }
 }

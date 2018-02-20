@@ -1,56 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="tRK-f3-HhQ">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="c8M-J0-LEb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--More View Controller-->
-        <scene sceneID="un0-me-WO4">
+        <scene sceneID="PT5-yG-7Ps">
             <objects>
-                <viewController id="tRK-f3-HhQ" customClass="MoreViewController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="Hgc-ng-w2D">
+                <viewController id="c8M-J0-LEb" customClass="MoreViewController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="FyP-hW-rG9">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="85h-wJ-NdZ">
-                                <rect key="frame" x="207" y="141" width="35" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="More" id="woB-YG-XGF">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RAJ-XM-KYC">
-                                <rect key="frame" x="393" y="7" width="37" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="4Sl-lJ-Qrt">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jfh-QH-S1d">
-                                <rect key="frame" x="395" y="263" width="37" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="eTB-le-uhj">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="85h-wJ-NdZ" firstAttribute="centerY" secondItem="Hgc-ng-w2D" secondAttribute="centerY" id="1oi-7U-EWc"/>
-                            <constraint firstItem="jfh-QH-S1d" firstAttribute="top" secondItem="Hgc-ng-w2D" secondAttribute="top" constant="20" id="Ara-X8-xgn"/>
-                            <constraint firstItem="85h-wJ-NdZ" firstAttribute="centerX" secondItem="Hgc-ng-w2D" secondAttribute="centerX" id="FJQ-Z1-uaY"/>
-                            <constraint firstAttribute="trailing" secondItem="jfh-QH-S1d" secondAttribute="trailing" constant="20" id="T12-Rn-JM0"/>
-                            <constraint firstAttribute="bottom" secondItem="RAJ-XM-KYC" secondAttribute="bottom" constant="7" id="arU-aU-HmO"/>
-                            <constraint firstAttribute="trailing" secondItem="RAJ-XM-KYC" secondAttribute="trailing" constant="22" id="eCz-Rt-4q8"/>
-                        </constraints>
+                        <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="fed-sy-TVH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="RJf-oQ-wgL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="163" y="189"/>
+            <point key="canvasLocation" x="345" y="-10"/>
         </scene>
     </scenes>
 </document>

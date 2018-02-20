@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ul8-vX-bfa">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -683,11 +683,11 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                <windowController id="B8D-0N-5wS" customClass="LoginWindowController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="LoginWindow" customModule="SwiftQQ" customModuleProvider="target">
+                        <windowStyleMask key="styleMask" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="250" height="320"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -701,140 +701,166 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="mBB-cD-leH">
-            <objects>
-                <windowController id="Ul8-vX-bfa" customClass="LoginWindowController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titleVisibility="hidden" id="lCx-xg-vc4" customClass="LoginWindow" customModule="SwiftQQ" customModuleProvider="target">
-                        <windowStyleMask key="styleMask" fullSizeContentView="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="240" height="320"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-                        <connections>
-                            <outlet property="delegate" destination="Ul8-vX-bfa" id="72c-eq-gw4"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="FJv-ez-pQH" kind="relationship" relationship="window.shadowedContentViewController" id="XAa-xo-Cfe"/>
-                    </connections>
-                </windowController>
-                <customObject id="UU0-V9-pZ4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="772" y="202"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="la9-qk-yMo">
-            <objects>
-                <viewController id="FJv-ez-pQH" customClass="LoginViewController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="Y8C-8J-UiQ">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <imageView focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HS5-c4-vbN" customClass="BGImageView" customModule="SwiftQQ" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" focusRingType="none" alignment="left" imageScaling="axesIndependently" image="bg-back" id="IW5-0s-U2P"/>
-                            </imageView>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVH-xC-etD">
-                                <rect key="frame" x="9" y="296" width="14" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icon-close-normal" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="I8w-sb-0A7">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDz-0D-Zb3">
-                                <rect key="frame" x="30" y="82" width="181" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" usesSingleLineMode="YES" id="liT-2Y-Thx">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" red="0.97194463014602661" green="0.97196739912033081" blue="0.97195512056350708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypm-Td-vvo">
-                                <rect key="frame" x="30" y="42" width="100" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="请输入密码" id="e6n-XZ-pJ1">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" red="0.97194463014602661" green="0.97196739912033081" blue="0.97195512056350708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textFieldCell>
-                                <connections>
-                                    <outlet property="delegate" destination="FJv-ez-pQH" id="rzZ-TR-nnZ"/>
-                                </connections>
-                            </textField>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwx-Th-X0I">
-                                <rect key="frame" x="32" y="72" width="177" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="input-bottom" id="Oj8-U6-xwJ"/>
-                            </imageView>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chL-H8-dSB">
-                                <rect key="frame" x="32" y="31" width="177" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="input-bottom" id="I2H-CC-qYj"/>
-                            </imageView>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5n-qW-OY0">
-                                <rect key="frame" x="108" y="3" width="24" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon-Arrow-normal" id="mdI-Mn-pdg"/>
-                            </imageView>
-                            <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pk-N9-Tbg" customClass="HoverImageView" customModule="SwiftQQ" customModuleProvider="target">
-                                <rect key="frame" x="70" y="193" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="head-normal" id="im0-U8-Coq"/>
-                            </imageView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-mF-Eql" customClass="HoverButton" customModule="SwiftQQ" customModuleProvider="target">
-                                <rect key="frame" x="189" y="43" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="icon-enter-undo" imagePosition="overlaps" alignment="center" alternateImage="icon-enter-down" imageScaling="proportionallyDown" inset="2" id="ANj-fA-2Py">
-                                    <behavior key="behavior" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="clickLoginButton:" target="FJv-ez-pQH" id="Uz2-DF-4q1"/>
-                                </connections>
-                            </button>
-                            <button wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLY-jC-q88">
-                                <rect key="frame" x="73" y="194" width="93" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="LoginWindow_BigDefaultHeadImage" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="dIH-ht-EMx">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="accountTextField" destination="nDz-0D-Zb3" id="EVo-u7-9Zi"/>
-                        <outlet property="bg_imageView" destination="HS5-c4-vbN" id="NFV-pA-P7B"/>
-                        <outlet property="headButton" destination="BLY-jC-q88" id="iSj-By-FFS"/>
-                        <outlet property="passwordButton" destination="LGY-mF-Eql" id="B8r-XQ-fvX"/>
-                        <outlet property="passwordTextField" destination="ypm-Td-vvo" id="BHC-If-ry2"/>
-                    </connections>
-                </viewController>
-                <customObject id="wD6-Dr-rAe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1085" y="202"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="320"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CG6-Dk-pcW" customClass="BackgroundImageView" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="bg-back" id="bi8-ql-o3b"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HaG-ol-ZNA">
+                                <rect key="frame" x="9" y="297" width="14" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon-close-normal" id="NUk-hL-lIx"/>
+                            </imageView>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQd-pE-CWu">
+                                <rect key="frame" x="38" y="94" width="178" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="输入账号" drawsBackground="YES" id="Utb-K8-VCc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.97194463014602661" green="0.97196739912033081" blue="0.97195512056350708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9aR-po-rQI">
+                                <rect key="frame" x="38" y="55" width="92" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="请输入密码" drawsBackground="YES" id="BBp-9X-sfg">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.97194463014602661" green="0.97196739912033081" blue="0.97195512056350708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="55V-GG-jUt"/>
+                                </connections>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4nt-0V-2QQ">
+                                <rect key="frame" x="36" y="81" width="182" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="input-bottom" id="qUS-HP-Rhb"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ty3-Hy-H2y">
+                                <rect key="frame" x="35" y="39" width="182" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="input-bottom" id="lWA-xy-YvG"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MLh-2t-69L" customClass="HoverImageView" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="70" y="198" width="102" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="head-normal" id="j4L-dC-Rml"/>
+                            </imageView>
+                            <button wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDR-IC-uy5">
+                                <rect key="frame" x="75" y="199" width="93" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="LoginWindow_BigDefaultHeadImage" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="4jf-bi-vHd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8Z-Rt-fLe" customClass="HoverButton" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="198" y="54" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="icon-enter-undo" imagePosition="overlaps" alignment="center" alternateImage="icon-enter-down" imageScaling="proportionallyDown" inset="2" id="8Wz-Bl-SMW">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="loginHome:" target="XfG-lQ-9wD" id="hE6-G4-FdU"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IFa-rG-4cV" customClass="HoverButton" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="120" y="11" width="14" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Icon-Arrow-normal" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="7WG-We-UVs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickDownButton:" target="XfG-lQ-9wD" id="0bz-hs-SR3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="downButton" destination="IFa-rG-4cV" id="tyb-F6-acT"/>
+                        <outlet property="headButton" destination="MDR-IC-uy5" id="P41-St-k6t"/>
+                        <outlet property="passwordButton" destination="C8Z-Rt-fLe" id="zhe-Qa-2nR"/>
+                        <outlet property="passwordTextField" destination="9aR-po-rQI" id="fad-vV-75j"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="676"/>
+        </scene>
+        <!--Login Sub Controller-->
+        <scene sceneID="EAS-We-n8Y">
+            <objects>
+                <viewController identifier="subLogin" storyboardIdentifier="subLogin" id="5h9-fu-BMn" customClass="LoginSubController" customModule="SwiftQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Vwf-kS-wFn">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSd-sA-3gl" customClass="HoverButton" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="20" y="53" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="记住密码" bezelStyle="rounded" image="cell_checkbox_normal" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="ggp-lz-4xv">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickRember:" target="5h9-fu-BMn" id="CH7-I4-BII"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHf-KG-Zf2">
+                                <rect key="frame" x="161" y="53" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="忘记密码" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="NZG-PI-ele">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66z-bI-VDt">
+                                <rect key="frame" x="161" y="20" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="账号注册" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Xe6-Fg-qSp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V2l-mY-YUL" customClass="HoverButton" customModule="SwiftQQ" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="自动登录" bezelStyle="rounded" image="cell_checkbox_normal" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="4Tb-ZL-2em">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickAuto:" target="5h9-fu-BMn" id="Fts-op-4XK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="autoLoginButton" destination="V2l-mY-YUL" id="ABe-Hh-mGG"/>
+                        <outlet property="remenberButton" destination="LSd-sA-3gl" id="eZr-4J-3dT"/>
+                    </connections>
+                </viewController>
+                <customObject id="6U3-I5-4rm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="985"/>
         </scene>
     </scenes>
     <resources>
         <image name="Icon-Arrow-normal" width="14" height="14"/>
         <image name="LoginWindow_BigDefaultHeadImage" width="93" height="93"/>
         <image name="bg-back" width="248" height="315"/>
+        <image name="cell_checkbox_normal" width="18" height="18"/>
         <image name="head-normal" width="102" height="102"/>
         <image name="icon-close-normal" width="14" height="14"/>
         <image name="icon-enter-down" width="20" height="20"/>
