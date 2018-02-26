@@ -10,6 +10,7 @@
 		5694E7AE2043A2460005B571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7AD2043A2460005B571 /* AppDelegate.swift */; };
 		5694E7B02043A2460005B571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5694E7AF2043A2460005B571 /* Assets.xcassets */; };
 		5694E7B32043A2460005B571 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5694E7B12043A2460005B571 /* MainMenu.xib */; };
+		5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5694E7B22043A2460005B571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5694E7B42043A2460005B571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5694E7B52043A2460005B571 /* SimuLooker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimuLooker.entitlements; sourceTree = "<group>"; };
+		5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTrampline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		5694E7AC2043A2460005B571 /* SimuLooker */ = {
 			isa = PBXGroup;
 			children = (
+				5694E7BB2043A9EC0005B571 /* ToolKit */,
 				5694E7AD2043A2460005B571 /* AppDelegate.swift */,
 				5694E7AF2043A2460005B571 /* Assets.xcassets */,
 				5694E7B12043A2460005B571 /* MainMenu.xib */,
@@ -58,6 +61,14 @@
 				5694E7B52043A2460005B571 /* SimuLooker.entitlements */,
 			);
 			path = SimuLooker;
+			sourceTree = "<group>";
+		};
+		5694E7BB2043A9EC0005B571 /* ToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */,
+			);
+			path = ToolKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +104,11 @@
 					5694E7A92043A2460005B571 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -131,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */,
 				5694E7AE2043A2460005B571 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +276,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SimuLooker/SimuLooker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SimuLooker/Info.plist;
@@ -274,7 +290,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SimuLooker/SimuLooker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SimuLooker/Info.plist;

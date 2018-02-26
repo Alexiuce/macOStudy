@@ -16,6 +16,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        let button = NSButton()
+        button.setAction(action: {print("action from \($0)")})
+        button.sendAction(button.action, to: button.target)
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
