@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5640A3382044EED7001FE691 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640A3372044EED7001FE691 /* Devices.swift */; };
+		5640A33A2044F3C7001FE691 /* ShellTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640A3392044F3C7001FE691 /* ShellTask.swift */; };
 		5694E7AE2043A2460005B571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7AD2043A2460005B571 /* AppDelegate.swift */; };
 		5694E7B02043A2460005B571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5694E7AF2043A2460005B571 /* Assets.xcassets */; };
 		5694E7B32043A2460005B571 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5694E7B12043A2460005B571 /* MainMenu.xib */; };
 		5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */; };
+		5694E7C22043D1660005B571 /* SLMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7C12043D1660005B571 /* SLMenu.swift */; };
+		C26656B38D60A5B3DD98B457 /* Pods_SimuLooker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5640A3372044EED7001FE691 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		5640A3392044F3C7001FE691 /* ShellTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellTask.swift; sourceTree = "<group>"; };
 		5694E7AA2043A2460005B571 /* SimuLooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimuLooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5694E7AD2043A2460005B571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5694E7AF2043A2460005B571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -21,6 +27,10 @@
 		5694E7B42043A2460005B571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5694E7B52043A2460005B571 /* SimuLooker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimuLooker.entitlements; sourceTree = "<group>"; };
 		5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTrampline.swift; sourceTree = "<group>"; };
+		5694E7C12043D1660005B571 /* SLMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLMenu.swift; sourceTree = "<group>"; };
+		B545A462D8A3051109925158 /* Pods-SimuLooker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.release.xcconfig"; sourceTree = "<group>"; };
+		D8969A61DA8AB60BBFDE7D63 /* Pods-SimuLooker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.debug.xcconfig"; sourceTree = "<group>"; };
+		F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimuLooker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26656B38D60A5B3DD98B457 /* Pods_SimuLooker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		067E84FC12928A05CB1EDD88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8969A61DA8AB60BBFDE7D63 /* Pods-SimuLooker.debug.xcconfig */,
+				B545A462D8A3051109925158 /* Pods-SimuLooker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5640A3362044EEB9001FE691 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5640A3372044EED7001FE691 /* Devices.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5694E7A12043A2460005B571 = {
 			isa = PBXGroup;
 			children = (
 				5694E7AC2043A2460005B571 /* SimuLooker */,
 				5694E7AB2043A2460005B571 /* Products */,
+				067E84FC12928A05CB1EDD88 /* Pods */,
+				B5D69E3BD074C1C31FA98603 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +83,8 @@
 		5694E7AC2043A2460005B571 /* SimuLooker */ = {
 			isa = PBXGroup;
 			children = (
+				5640A3362044EEB9001FE691 /* Model */,
+				5694E7C02043D1330005B571 /* Menu */,
 				5694E7BB2043A9EC0005B571 /* ToolKit */,
 				5694E7AD2043A2460005B571 /* AppDelegate.swift */,
 				5694E7AF2043A2460005B571 /* Assets.xcassets */,
@@ -67,8 +99,25 @@
 			isa = PBXGroup;
 			children = (
 				5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */,
+				5640A3392044F3C7001FE691 /* ShellTask.swift */,
 			);
 			path = ToolKit;
+			sourceTree = "<group>";
+		};
+		5694E7C02043D1330005B571 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5694E7C12043D1660005B571 /* SLMenu.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B5D69E3BD074C1C31FA98603 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5694E7B82043A2460005B571 /* Build configuration list for PBXNativeTarget "SimuLooker" */;
 			buildPhases = (
+				14932EFD6B3D96ADB577CFF7 /* [CP] Check Pods Manifest.lock */,
 				5694E7A62043A2460005B571 /* Sources */,
 				5694E7A72043A2460005B571 /* Frameworks */,
 				5694E7A82043A2460005B571 /* Resources */,
+				262DF17F77DD1F27484CF55E /* [CP] Embed Pods Frameworks */,
+				49CBD3194B61AF31C4927433 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,13 +194,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14932EFD6B3D96ADB577CFF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimuLooker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		262DF17F77DD1F27484CF55E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49CBD3194B61AF31C4927433 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5694E7A62043A2460005B571 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */,
+				5640A33A2044F3C7001FE691 /* ShellTask.swift in Sources */,
+				5694E7C22043D1660005B571 /* SLMenu.swift in Sources */,
 				5694E7AE2043A2460005B571 /* AppDelegate.swift in Sources */,
+				5640A3382044EED7001FE691 /* Devices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +383,7 @@
 		};
 		5694E7B92043A2460005B571 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8969A61DA8AB60BBFDE7D63 /* Pods-SimuLooker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +398,7 @@
 		};
 		5694E7BA2043A2460005B571 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B545A462D8A3051109925158 /* Pods-SimuLooker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
