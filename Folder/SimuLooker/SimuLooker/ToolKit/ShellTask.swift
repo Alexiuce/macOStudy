@@ -20,6 +20,6 @@ struct ShellTask{
         task.launch()
         task.waitUntilExit()
         let data = output.fileHandleForReading.readDataToEndOfFile()
-        return   String(data: data, encoding: String.Encoding.utf8) ?? ""
+        return String(data: data, encoding: String.Encoding.utf8) ?? ""
     }
 }
