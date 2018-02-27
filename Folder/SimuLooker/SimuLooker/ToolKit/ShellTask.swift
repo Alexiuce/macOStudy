@@ -8,34 +8,18 @@
 
 import Cocoa
 
-
-
-
-
 struct ShellTask{
     
     /* 执行cmd 指令 */
-    static func execCmd(cmd: String, arguments: [String], callback: @escaping (String)->()){
+    static func execCmd(cmd: String, arguments: [String]) -> String{
         let task = Process()
         task.launchPath = cmd
         task.arguments = arguments
-        
-        let result = Pipe()
-        task.standardOutput = result
-        
-        result.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: result.fileHandleForReading, queue: nil) { (noti) in
-            let resultData = result.fileHandleForReading.availableData
-            guard let resultString = String(data: resultData, encoding: String.Encoding.utf8) else{return}
-            callback(resultString)
-        }
-        
-        task.terminationHandler = { task in
-          print("exec cmd finished")
-        }
+        let output = Pipe()
+        task.standardOutput = output
         task.launch()
         task.waitUntilExit()
+        let data = output.fileHandleForReading.readDataToEndOfFile()
+        return   String(data: data, encoding: String.Encoding.utf8) ?? ""
     }
-    
 }

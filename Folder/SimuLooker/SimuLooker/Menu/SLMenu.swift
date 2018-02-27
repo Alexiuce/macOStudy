@@ -22,6 +22,9 @@ class SLMenu: NSMenu {
         return item
     }()
     
+    var jsonString = ""
+    
+    
     override init(title: String) {
         super.init(title: "")
         loadDevice()
@@ -61,13 +64,8 @@ extension SLMenu{
         self.statusItem.menu = mainMenu
     }
     /** 加载设备 */
-   fileprivate func loadDevice()  {
-
-        ShellTask.execCmd(cmd: "/usr/bin/xcrun", arguments: ["simctl", "list", "-j", "devices"]){ result in
-           
-            print(result)
-        }
-    
+    fileprivate func loadDevice(){
+        SimuDeviceManager.loadSimuDevice()
     }
     
 }

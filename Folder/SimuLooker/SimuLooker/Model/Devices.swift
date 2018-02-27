@@ -10,24 +10,21 @@ import Foundation
 
 import SwiftyJSON
 
-struct Device {
+class Device {
     let name : String
     let udid : String
     let osInfo : String
     let isOpen : Bool
     let isAvailable : Bool
-    let applications : [JSON]
+ 
     
     
-    init(osInfo: String, json: String) {
-        let jsonDict = JSON.init(parseJSON: json)
-        name = jsonDict["name"].stringValue
-        udid = jsonDict["udid"].stringValue
+    init(osInfo: String, json:JSON) {
+        name = json["name"].stringValue
+        udid = json["udid"].stringValue
         self.osInfo = osInfo
-        isOpen = jsonDict["isOpen"].boolValue
-        isAvailable = jsonDict["isAvailabel"].boolValue
-        applications = jsonDict["application"].arrayValue
+        isOpen = json["state"].stringValue.contains("Booted")
+        isAvailable = json["availability"].stringValue.contains("(available)")
     }
-    
 }
 
