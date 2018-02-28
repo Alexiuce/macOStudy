@@ -56,8 +56,8 @@
         <!--OneController-->
         <scene sceneID="l8o-Lo-Mu7">
             <objects>
-                <viewController title="OneController" id="E89-p6-UZK" sceneMemberID="viewController">
-                    <view key="view" id="ctB-ot-oOu">
+                <viewController title="OneController" id="E89-p6-UZK" customClass="OneController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="ctB-ot-oOu">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -83,13 +83,13 @@
         <!--TwoController-->
         <scene sceneID="pri-8c-brc">
             <objects>
-                <viewController title="TwoController" id="vvt-73-aic" sceneMemberID="viewController">
-                    <view key="view" id="HKT-KA-6fN">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="215"/>
+                <viewController title="TwoController" id="vvt-73-aic" customClass="TwoController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="HKT-KA-6fN">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="215"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wd7-fI-G5c">
-                                <rect key="frame" x="211" y="99" width="29" height="17"/>
+                                <rect key="frame" x="152" y="99" width="29" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Two" id="WmY-bP-3jE">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -102,10 +102,13 @@
                             <constraint firstItem="Wd7-fI-G5c" firstAttribute="centerX" secondItem="HKT-KA-6fN" secondAttribute="centerX" id="seN-bl-vnl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="HKT-KA-6fN" id="FWk-8g-mH7"/>
+                    </connections>
                 </viewController>
                 <customObject id="6AN-fA-jGw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="833" y="730.5"/>
+            <point key="canvasLocation" x="774" y="730.5"/>
         </scene>
     </scenes>
     <resources>

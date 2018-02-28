@@ -17,8 +17,19 @@ class PreTableViewController: NSTabViewController {
     
     override func tabView(_ tabView: NSTabView, didSelect tabViewItem: NSTabViewItem?) {
         super.tabView(tabView, didSelect: tabViewItem)
-     
-        print(tabViewItem?.viewController?.title ?? "nil ...")
+        
+        guard let itemView = tabViewItem?.view,
+              let window = view.window,
+              let controller = tabViewItem?.viewController
+              else {return}
+        
+        if let  c = controller as? TwoController {
+            
+            print("back view size \(c.backgroundView.frame.size)")
+        }
+       
+        
+        
     }
     
     
