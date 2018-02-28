@@ -13,6 +13,12 @@ class SLMenu: NSMenu {
     /** 单利 */
     static let shareMenu = SLMenu()
     
+    lazy var preferenceController : NSWindowController = {
+        let vc = NSStoryboard(name: NSStoryboard.Name.init(rawValue: "preference"), bundle: nil).instantiateInitialController() as! NSWindowController
+        return vc
+    }()
+    
+    
     /* 懒加载属性 */
     lazy var statusItem : NSStatusItem = {
         let item = NSStatusBar.system.statusItem(withLength:NSStatusItem.variableLength)
@@ -114,6 +120,11 @@ extension SLMenu{
     
     @objc fileprivate func preferenceItem(){
         print("click preferences")
+        
+        preferenceController.showWindow(self)
+        
+        
+        
     }
     @objc fileprivate func exitItem(){
         print("exit simulooker")

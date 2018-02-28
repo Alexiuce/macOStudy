@@ -17,6 +17,8 @@
 		5694E7B32043A2460005B571 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5694E7B12043A2460005B571 /* MainMenu.xib */; };
 		5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */; };
 		5694E7C22043D1660005B571 /* SLMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7C12043D1660005B571 /* SLMenu.swift */; };
+		56961F8D204698E2004C7393 /* preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56961F8C204698E2004C7393 /* preference.storyboard */; };
+		56961F932046ABFB004C7393 /* PreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F922046ABFB004C7393 /* PreTableViewController.swift */; };
 		C26656B38D60A5B3DD98B457 /* Pods_SimuLooker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		5694E7B52043A2460005B571 /* SimuLooker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimuLooker.entitlements; sourceTree = "<group>"; };
 		5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTrampline.swift; sourceTree = "<group>"; };
 		5694E7C12043D1660005B571 /* SLMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLMenu.swift; sourceTree = "<group>"; };
+		56961F8C204698E2004C7393 /* preference.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = preference.storyboard; sourceTree = "<group>"; };
+		56961F922046ABFB004C7393 /* PreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreTableViewController.swift; sourceTree = "<group>"; };
 		B545A462D8A3051109925158 /* Pods-SimuLooker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.release.xcconfig"; sourceTree = "<group>"; };
 		D8969A61DA8AB60BBFDE7D63 /* Pods-SimuLooker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.debug.xcconfig"; sourceTree = "<group>"; };
 		F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimuLooker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +95,7 @@
 		5694E7AC2043A2460005B571 /* SimuLooker */ = {
 			isa = PBXGroup;
 			children = (
+				56961F8B204698BB004C7393 /* PreferenceController */,
 				5640A3362044EEB9001FE691 /* Model */,
 				5694E7C02043D1330005B571 /* Menu */,
 				5694E7BB2043A9EC0005B571 /* ToolKit */,
@@ -119,6 +124,15 @@
 				5694E7C12043D1660005B571 /* SLMenu.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		56961F8B204698BB004C7393 /* PreferenceController */ = {
+			isa = PBXGroup;
+			children = (
+				56961F8C204698E2004C7393 /* preference.storyboard */,
+				56961F922046ABFB004C7393 /* PreTableViewController.swift */,
+			);
+			path = PreferenceController;
 			sourceTree = "<group>";
 		};
 		B5D69E3BD074C1C31FA98603 /* Frameworks */ = {
@@ -198,6 +212,7 @@
 			files = (
 				5694E7B02043A2460005B571 /* Assets.xcassets in Resources */,
 				5694E7B32043A2460005B571 /* MainMenu.xib in Resources */,
+				56961F8D204698E2004C7393 /* preference.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +280,7 @@
 				5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */,
 				5640A33E20452D39001FE691 /* SimuDeviceManager.swift in Sources */,
 				5640A33A2044F3C7001FE691 /* ShellTask.swift in Sources */,
+				56961F932046ABFB004C7393 /* PreTableViewController.swift in Sources */,
 				5694E7C22043D1660005B571 /* SLMenu.swift in Sources */,
 				5640A340204531CA001FE691 /* SimuPath.swift in Sources */,
 				5694E7AE2043A2460005B571 /* AppDelegate.swift in Sources */,
