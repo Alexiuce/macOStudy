@@ -84,7 +84,6 @@ extension SLMenu{
                     os_devices.forEach{
                         
                         let deviceItem = NSMenuItem(title: $0.name, action: nil, keyEquivalent: "")
-                        
                         if $0.name.contains("iPhone") {
                             deviceItem.image = NSImage(named: NSImage.Name(rawValue: "iPhone"))
                         }
@@ -96,8 +95,6 @@ extension SLMenu{
             }
         }
     }
-    
-    
 }
 // MARK: event response
 extension SLMenu{

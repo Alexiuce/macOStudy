@@ -35,4 +35,21 @@ struct SimuPath {
         return devicePath(udid:udid).appendingPathComponent("data/Containers/Bundle/Application")
     }
     
+    
+    /* 获取url下的所有文件夹 */
+    static func allDirector(_ path: URL) ->[String] {
+        let result = try? FileManager.default.contentsOfDirectory(atPath: path.path).filter({ (p) -> Bool in
+            return SimuPath.isDirectory(path.appendingPathComponent(p).path)
+        })
+        return result ?? []
+    }
+    
+    /* 判断是否为目录  */
+    static func isDirectory(_ path: String) -> Bool{
+        var flag = ObjCBool(false)
+        FileManager.default.fileExists(atPath: path, isDirectory: &flag)
+        return flag.boolValue
+    }
+    
+    
 }

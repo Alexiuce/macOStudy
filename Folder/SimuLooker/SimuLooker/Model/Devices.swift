@@ -18,6 +18,8 @@ class Device {
     let isAvailable : Bool
  
     
+    let appArray: [SimuApplication]
+    
     
     init(osInfo: String, json:JSON) {
         name = json["name"].stringValue
@@ -25,6 +27,8 @@ class Device {
         self.osInfo = osInfo
         isOpen = json["state"].stringValue.contains("Booted")
         isAvailable = json["availability"].stringValue.contains("(available)")
+        appArray = SimuApplication.loadAllApplicationOnDevice(udid)
+        
     }
 }
 
