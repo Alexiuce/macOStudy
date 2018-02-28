@@ -89,8 +89,10 @@ extension SLMenu{
                             let subMenu = NSMenu()
                             
                             $0.appArray.forEach({ (app) in
-                                let appItem = NSMenuItem(title: app.name, action: nil, keyEquivalent: "")
+                                let appItem = NSMenuItem(title: app.name, action: #selector(SLMenu.clickAppItem(_:)), keyEquivalent: "")
                                  appItem.image = app.icon
+                                 appItem.representedObject = app
+                                 appItem.target = self
                                 subMenu.addItem(appItem)
                             })
                             deviceItem.submenu = subMenu
@@ -115,6 +117,17 @@ extension SLMenu{
     }
     @objc fileprivate func exitItem(){
         print("exit simulooker")
+    }
+    
+}
+
+//MARK: app item event response
+extension SLMenu{
+    
+    @objc fileprivate func clickAppItem(_ item: NSMenuItem){
+        guard let app = item.representedObject as? SimuApplication else { return  }
+        guard let url = app.documentPath else {return}
+        NSWorkspace.shared.open(url)
     }
     
 }

@@ -36,6 +36,14 @@ struct SimuPath {
     }
     
     
+    
+    static func applicationContainerPlistPath(_ path: URL) -> URL{
+        return path.appendingPathComponent(".com.apple.mobile_container_manager.metadata.plist")
+    }
+    
+    
+    
+    
     /* 获取url下的所有文件夹 */
     static func allDirector(_ path: URL) ->[String] {
         let result = try? FileManager.default.contentsOfDirectory(atPath: path.path).filter({ (p) -> Bool in

@@ -14,7 +14,8 @@ class SimuApplication {
     
     var name = ""
     var icon: NSImage?
-    
+    var bundleId = ""
+    var documentPath : URL?
     var path: URL?{
         didSet{
             guard let p = path else { return }
@@ -23,6 +24,10 @@ class SimuApplication {
             
             guard let json = NSDictionary(contentsOf: p.appendingPathComponent("\(app)/Info.plist")) else { return  }
             self.name = (json["CFBundleDisplayName"] as? String ) ?? (json["CFBundleName"] as? String) ?? ""
+            
+            if let bid = json["CFBundleIdentifier"] as? String {
+                bundleId = bid
+            }
             guard let bundleIcon = json["CFBundleIcons"] as? NSDictionary,
                   let primaryIcon = bundleIcon["CFBundlePrimaryIcon"] as? NSDictionary,
                   let iconFiles = primaryIcon["CFBundleIconFiles"] as? [String],
@@ -42,6 +47,20 @@ class SimuApplication {
         }).map { (content) -> SimuApplication in
             let app = SimuApplication()
             app.path = applicationUrl.appendingPathComponent(content)
+            let appsUrl = SimuPath.applicationPath(udid: deviceUdid)
+            var documentPath : URL?
+            SimuPath.allDirector(appsUrl).forEach({ (appDataPath) in
+                let appContainerUrl = appsUrl.appendingPathComponent(appDataPath)
+                let appContainerPlist = SimuPath.applicationContainerPlistPath(appContainerUrl)
+                if let metadata = NSDictionary(contentsOf: appContainerPlist) ,
+                   let metaId = metadata["MCMMetadataIdentifier"] as? String {
+                    if metaId == app.bundleId {
+                        documentPath = appContainerUrl
+                    }
+                }
+            })
+            app.documentPath = documentPath
+            
             return app
         }
         return allContents ?? []
