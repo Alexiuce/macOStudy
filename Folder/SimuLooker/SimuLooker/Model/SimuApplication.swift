@@ -6,18 +6,29 @@
 //  Copyright © 2018年 alexiuce.github.io. All rights reserved.
 //
 
-import Foundation
+import Cocoa
+import SwiftyJSON
+
 
 class SimuApplication {
     
     var name = ""
+    var icon: NSImage?
     
     var path: URL?{
         didSet{
             guard let p = path else { return }
+            
             guard let app = SimuPath.allDirector(p).first else { return  }
+            
             guard let json = NSDictionary(contentsOf: p.appendingPathComponent("\(app)/Info.plist")) else { return  }
-            self.name = (json["CFBundleName"] as? String) ?? ""
+            self.name = (json["CFBundleDisplayName"] as? String ) ?? (json["CFBundleName"] as? String) ?? ""
+            guard let bundleIcon = json["CFBundleIcons"] as? NSDictionary,
+                  let primaryIcon = bundleIcon["CFBundlePrimaryIcon"] as? NSDictionary,
+                  let iconFiles = primaryIcon["CFBundleIconFiles"] as? [String],
+                  let imgName = iconFiles.first
+                  else { return  }
+            icon = Bundle(url: p.appendingPathComponent("\(app)"))?.image(forResource: NSImage.Name(imgName))
         }
     }
     
@@ -34,10 +45,5 @@ class SimuApplication {
             return app
         }
         return allContents ?? []
-        
     }
-    
-    
-    
-    
 }

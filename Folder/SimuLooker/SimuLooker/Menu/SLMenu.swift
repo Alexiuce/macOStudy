@@ -86,6 +86,14 @@ extension SLMenu{
                         let deviceItem = NSMenuItem(title: $0.name, action: nil, keyEquivalent: "")
                         if $0.name.contains("iPhone") {
                             deviceItem.image = NSImage(named: NSImage.Name(rawValue: "iPhone"))
+                            let subMenu = NSMenu()
+                            
+                            $0.appArray.forEach({ (app) in
+                                let appItem = NSMenuItem(title: app.name, action: nil, keyEquivalent: "")
+                                 appItem.image = app.icon
+                                subMenu.addItem(appItem)
+                            })
+                            deviceItem.submenu = subMenu
                         }
                         
                         mainMenu.insertItem(deviceItem, at: index)
