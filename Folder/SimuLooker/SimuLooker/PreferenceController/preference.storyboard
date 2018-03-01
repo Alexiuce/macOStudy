@@ -10,9 +10,9 @@
             <objects>
                 <windowController id="hgZ-Uv-WYE" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="tdd-GM-TM8">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="320" y="343" width="480" height="270"/>
+                        <rect key="contentRect" x="777" y="500" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1130"/>
                         <connections>
                             <outlet property="delegate" destination="hgZ-Uv-WYE" id="Nio-ad-j6T"/>
@@ -31,8 +31,8 @@
             <objects>
                 <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="eku-UD-cxW" customClass="PreTableViewController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="General" identifier="" image="NSInfo" id="69d-HR-nsY"/>
-                        <tabViewItem label="Advance" identifier="" image="NSAdvanced" id="rXU-gg-C1i"/>
+                        <tabViewItem label="General" identifier="general" image="NSInfo" id="69d-HR-nsY"/>
+                        <tabViewItem label="Advance" identifier="advance" image="NSAdvanced" id="rXU-gg-C1i"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="CgT-4g-0Mu">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -58,12 +58,28 @@
             <objects>
                 <viewController title="OneController" id="E89-p6-UZK" customClass="OneController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="ctB-ot-oOu">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PCv-sf-FSs">
-                                <rect key="frame" x="211" y="141" width="29" height="17"/>
+                                <rect key="frame" x="211" y="117" width="29" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="One" id="8g1-RJ-1M1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jZN-Hs-BXQ">
+                                <rect key="frame" x="405" y="8" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="JCJ-q8-CKk">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="07H-vi-YD5">
+                                <rect key="frame" x="6" y="223" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="RRR-II-WKR">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -71,6 +87,10 @@
                             </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jZN-Hs-BXQ" secondAttribute="trailing" constant="10" id="58x-gY-Zdl"/>
+                            <constraint firstItem="07H-vi-YD5" firstAttribute="leading" secondItem="ctB-ot-oOu" secondAttribute="leading" constant="8" id="K5j-yQ-r3W"/>
+                            <constraint firstItem="07H-vi-YD5" firstAttribute="top" secondItem="ctB-ot-oOu" secondAttribute="top" constant="10" id="gLP-fi-9f6"/>
+                            <constraint firstAttribute="bottom" secondItem="jZN-Hs-BXQ" secondAttribute="bottom" constant="8" id="j0P-iw-yXc"/>
                             <constraint firstItem="PCv-sf-FSs" firstAttribute="centerX" secondItem="ctB-ot-oOu" secondAttribute="centerX" id="l04-WA-i6Z"/>
                             <constraint firstItem="PCv-sf-FSs" firstAttribute="centerY" secondItem="ctB-ot-oOu" secondAttribute="centerY" id="t0O-aC-loI"/>
                         </constraints>
@@ -96,8 +116,28 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BDC-AO-dIU">
+                                <rect key="frame" x="7" y="188" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="fhU-Mc-Pw0">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d0Z-sy-nLZ">
+                                <rect key="frame" x="288" y="11" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="6cO-m7-kuW">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="BDC-AO-dIU" firstAttribute="top" secondItem="HKT-KA-6fN" secondAttribute="top" constant="10" id="5OM-ZY-fTj"/>
+                            <constraint firstAttribute="trailing" secondItem="d0Z-sy-nLZ" secondAttribute="trailing" constant="9" id="Ibj-zm-uUF"/>
+                            <constraint firstAttribute="bottom" secondItem="d0Z-sy-nLZ" secondAttribute="bottom" constant="11" id="QgT-5n-fIX"/>
+                            <constraint firstItem="BDC-AO-dIU" firstAttribute="leading" secondItem="HKT-KA-6fN" secondAttribute="leading" constant="9" id="cwt-20-XHc"/>
                             <constraint firstItem="Wd7-fI-G5c" firstAttribute="centerY" secondItem="HKT-KA-6fN" secondAttribute="centerY" id="qH0-Mz-nvh"/>
                             <constraint firstItem="Wd7-fI-G5c" firstAttribute="centerX" secondItem="HKT-KA-6fN" secondAttribute="centerX" id="seN-bl-vnl"/>
                         </constraints>
@@ -108,7 +148,7 @@
                 </viewController>
                 <customObject id="6AN-fA-jGw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="730.5"/>
+            <point key="canvasLocation" x="754" y="655"/>
         </scene>
     </scenes>
     <resources>

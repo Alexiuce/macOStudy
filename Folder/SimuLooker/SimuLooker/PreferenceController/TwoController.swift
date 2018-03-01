@@ -11,10 +11,12 @@ import Cocoa
 class TwoController: NSViewController {
 
     @IBOutlet var backgroundView: NSView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.layer?.backgroundColor = NSColor.purple.cgColor
+        self.preferredContentSize = view.frame.size
         // Do view setup here.
     }
     

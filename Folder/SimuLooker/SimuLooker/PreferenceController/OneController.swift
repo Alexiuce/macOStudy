@@ -10,11 +10,15 @@ import Cocoa
 
 class OneController: NSViewController {
 
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.preferredContentSize = view.frame.size
         view.layer?.backgroundColor = NSColor.orange.cgColor
         // Do view setup here.
     }
+
     
 }
