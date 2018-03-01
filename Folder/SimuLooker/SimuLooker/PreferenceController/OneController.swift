@@ -11,8 +11,6 @@ import Cocoa
 class OneController: NSViewController {
 
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.preferredContentSize = view.frame.size
