@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class MenuManager: NSObject {
     
-    var devicesDictionary = [String: JSON]()
+    var devicesDictionary = [String:[Device]]()
     
     lazy var preferenceController : NSWindowController = {
         let vc = NSStoryboard(name: NSStoryboard.Name.init(rawValue: "preference"), bundle: nil).instantiateInitialController() as! PreferenceWindowController
@@ -42,20 +42,16 @@ extension MenuManager{
     fileprivate func  createDeviceMenu(){
         let mainMenu = NSMenu(title: "main")
         
-        var itemIndex = 0
-        devicesDictionary.forEach { (key,value) in
-            if !key.contains("iOS") {return}
-            let titilItem = NSMenuItem(title: key, action: nil, keyEquivalent: "")
-            mainMenu.insertItem(titilItem, at: itemIndex)
-            itemIndex += 1
-            value.arrayValue.forEach{
-                let subItem = NSMenuItem(title: $0["name"].stringValue, action: nil, keyEquivalent: "")
-                mainMenu.addItem(subItem)
-                itemIndex += 1
-            }
-            
-        }
         
+        devicesDictionary.forEach { (key,value) in
+          
+            let titilItem = NSMenuItem(title: key, action: nil, keyEquivalent: "")
+            mainMenu.addItem(titilItem)
+            value.forEach{
+                let subItem = NSMenuItem(title: $0.name, action: nil, keyEquivalent: "")
+                mainMenu.addItem(subItem)
+            }
+        }
         
         // 1. 添加item
         let aboutItem = NSMenuItem(title: "About SimuLooker", action: #selector(self.aboutItem), keyEquivalent: "")

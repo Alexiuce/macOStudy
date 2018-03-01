@@ -14,9 +14,21 @@ struct SimuDeviceManager {
 
 
     @discardableResult
-    static func loadSimuDevice() -> [String:JSON] {
+    static func loadSimuDevice() -> [String:[Device]] {
         let cmdResult = ShellTask.execCmd(cmd: "/usr/bin/xcrun", arguments: ["simctl","list","-j","devices"])
         let json = JSON.init(parseJSON: cmdResult)
-        return json["devices"].dictionaryValue
+        var result = [String:[Device]]()
+        
+        json["devices"].dictionaryValue.forEach { (key,value) in
+            if !key.contains("iOS"){return}
+            result[key] = [Device]()
+            value.arrayValue.forEach({ (deviceJson) in
+                let device = Device(osInfo: key, json: deviceJson)
+                result[key]?.append(device)
+            })
+        }
+        
+        
+        return result
     }
 }
