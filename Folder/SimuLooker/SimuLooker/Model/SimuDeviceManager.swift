@@ -24,11 +24,11 @@ struct SimuDeviceManager {
             result[key] = [Device]()
             value.arrayValue.forEach({ (deviceJson) in
                 let device = Device(osInfo: key, json: deviceJson)
-                result[key]?.append(device)
+                if device.appArray.count > 0 {
+                    result[key]?.append(device)                    
+                }
             })
         }
-        
-        
         return result
     }
 }

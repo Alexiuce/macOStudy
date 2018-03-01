@@ -36,8 +36,6 @@ class MenuManager: NSObject {
     
 }
 
-
-
 extension MenuManager{
     fileprivate func  createDeviceMenu(){
         let mainMenu = NSMenu(title: "main")
@@ -50,9 +48,16 @@ extension MenuManager{
             value.forEach{
                 let subItem = NSMenuItem(title: $0.name, action: nil, keyEquivalent: "")
                 mainMenu.addItem(subItem)
+                
+                let subMenu = NSMenu()
+                $0.appArray.forEach({ (app) in
+                    let appItem = NSMenuItem(title: app.name, action: nil, keyEquivalent: "")
+                    subMenu.addItem(appItem)
+                })
+                subItem.submenu = subMenu
             }
         }
-        
+         mainMenu.addItem(NSMenuItem.separator())
         // 1. 添加item
         let aboutItem = NSMenuItem(title: "About SimuLooker", action: #selector(self.aboutItem), keyEquivalent: "")
         aboutItem.target = self
@@ -78,12 +83,8 @@ extension MenuManager{
     }
     
     @objc fileprivate func preferenceItem(){
-        print("click preferences")
-        
+        preferenceController.window?.orderFrontRegardless()
         preferenceController.showWindow(self)
-        
-        
-        
     }
     @objc fileprivate func exitItem(){
         NSApp.terminate(self)
@@ -91,7 +92,7 @@ extension MenuManager{
     
 }
 //MARK: app item event response
-extension SLMenu{
+extension MenuManager{
     
     @objc fileprivate func clickAppItem(_ item: NSMenuItem){
         guard let app = item.representedObject as? SimuApplication else { return  }
