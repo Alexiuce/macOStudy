@@ -14,7 +14,7 @@ class SLMenu: NSMenu {
     static let shareMenu = SLMenu()
     
     lazy var preferenceController : NSWindowController = {
-        let vc = NSStoryboard(name: NSStoryboard.Name.init(rawValue: "preference"), bundle: nil).instantiateInitialController() as! NSWindowController
+        let vc = NSStoryboard(name: NSStoryboard.Name.init(rawValue: "preference"), bundle: nil).instantiateInitialController() as! PreferenceWindowController
         return vc
     }()
     

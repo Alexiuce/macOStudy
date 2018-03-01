@@ -25,7 +25,6 @@ class PreTableViewController: NSTabViewController {
               else {return}
 
         
-        print(tabViewItem?.identifier ?? "nil id")
         let oldFrame = window.frame
         
         let newViewSize = itemView.fittingSize

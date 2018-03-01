@@ -21,6 +21,7 @@
 		56961F932046ABFB004C7393 /* PreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F922046ABFB004C7393 /* PreTableViewController.swift */; };
 		56961F952046B225004C7393 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F942046B225004C7393 /* OneController.swift */; };
 		56961F972046B239004C7393 /* TwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F962046B239004C7393 /* TwoController.swift */; };
+		56961F9B2047CA3C004C7393 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */; };
 		C26656B38D60A5B3DD98B457 /* Pods_SimuLooker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		56961F922046ABFB004C7393 /* PreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreTableViewController.swift; sourceTree = "<group>"; };
 		56961F942046B225004C7393 /* OneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneController.swift; sourceTree = "<group>"; };
 		56961F962046B239004C7393 /* TwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoController.swift; sourceTree = "<group>"; };
+		56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 		B545A462D8A3051109925158 /* Pods-SimuLooker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.release.xcconfig"; sourceTree = "<group>"; };
 		D8969A61DA8AB60BBFDE7D63 /* Pods-SimuLooker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.debug.xcconfig"; sourceTree = "<group>"; };
 		F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimuLooker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 			children = (
 				56961F8C204698E2004C7393 /* preference.storyboard */,
 				56961F922046ABFB004C7393 /* PreTableViewController.swift */,
+				56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */,
 				56961F942046B225004C7393 /* OneController.swift */,
 				56961F962046B239004C7393 /* TwoController.swift */,
 			);
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56961F9B2047CA3C004C7393 /* PreferenceWindowController.swift in Sources */,
 				5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */,
 				5640A33E20452D39001FE691 /* SimuDeviceManager.swift in Sources */,
 				56961F952046B225004C7393 /* OneController.swift in Sources */,
