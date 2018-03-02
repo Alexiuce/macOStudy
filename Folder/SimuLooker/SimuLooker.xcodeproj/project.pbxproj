@@ -12,6 +12,8 @@
 		5640A33C2045264E001FE691 /* SimuApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640A33B2045264E001FE691 /* SimuApplication.swift */; };
 		5640A33E20452D39001FE691 /* SimuDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640A33D20452D39001FE691 /* SimuDeviceManager.swift */; };
 		5640A340204531CA001FE691 /* SimuPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640A33F204531CA001FE691 /* SimuPath.swift */; };
+		568D8A742048F40D00F49E35 /* SAppMenuItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568D8A732048F40D00F49E35 /* SAppMenuItem.xib */; };
+		568D8A762048F44600F49E35 /* SAppItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568D8A752048F44600F49E35 /* SAppItemView.swift */; };
 		5694E7AE2043A2460005B571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7AD2043A2460005B571 /* AppDelegate.swift */; };
 		5694E7B02043A2460005B571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5694E7AF2043A2460005B571 /* Assets.xcassets */; };
 		5694E7B32043A2460005B571 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5694E7B12043A2460005B571 /* MainMenu.xib */; };
@@ -32,6 +34,8 @@
 		5640A33B2045264E001FE691 /* SimuApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuApplication.swift; sourceTree = "<group>"; };
 		5640A33D20452D39001FE691 /* SimuDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuDeviceManager.swift; sourceTree = "<group>"; };
 		5640A33F204531CA001FE691 /* SimuPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuPath.swift; sourceTree = "<group>"; };
+		568D8A732048F40D00F49E35 /* SAppMenuItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAppMenuItem.xib; sourceTree = "<group>"; };
+		568D8A752048F44600F49E35 /* SAppItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAppItemView.swift; sourceTree = "<group>"; };
 		5694E7AA2043A2460005B571 /* SimuLooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimuLooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5694E7AD2043A2460005B571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5694E7AF2043A2460005B571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			children = (
 				56961F9C2047DA17004C7393 /* MenuManager.swift */,
 				56961F9E2047FD8F004C7393 /* SAppMenuItem.swift */,
+				568D8A752048F44600F49E35 /* SAppItemView.swift */,
+				568D8A732048F40D00F49E35 /* SAppMenuItem.xib */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5694E7B02043A2460005B571 /* Assets.xcassets in Resources */,
+				568D8A742048F40D00F49E35 /* SAppMenuItem.xib in Resources */,
 				5694E7B32043A2460005B571 /* MainMenu.xib in Resources */,
 				56961F8D204698E2004C7393 /* preference.storyboard in Resources */,
 			);
@@ -290,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56961F9B2047CA3C004C7393 /* PreferenceWindowController.swift in Sources */,
+				568D8A762048F44600F49E35 /* SAppItemView.swift in Sources */,
 				5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */,
 				5640A33E20452D39001FE691 /* SimuDeviceManager.swift in Sources */,
 				56961F952046B225004C7393 /* OneController.swift in Sources */,

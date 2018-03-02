@@ -49,7 +49,7 @@ extension MenuManager{
                 mainMenu.addItem(deviceItem)
                 let subMenu = NSMenu()
                 $0.appArray.forEach({ (app) in
-                    let appItem = NSMenuItem(title: app.name, action: nil, keyEquivalent: "")
+                    let appItem = SAppMenuItem(title: app.name, action: nil, keyEquivalent: "")
                     appItem.image = app.icon
                     subMenu.addItem(appItem)
                 })
