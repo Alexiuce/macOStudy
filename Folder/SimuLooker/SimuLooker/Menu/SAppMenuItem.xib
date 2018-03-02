@@ -28,13 +28,13 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vJ3-5v-LcS">
-                    <rect key="frame" x="66" y="5" width="81" height="32"/>
-                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XNq-sq-TKJ">
+                    <rect key="frame" x="66" y="5" width="103" height="32"/>
+                    <buttonCell key="cell" type="push" title="Document" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XNq-sq-TKJ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="openAppLocation:" target="-2" id="N2d-lv-a94"/>
+                        <action selector="openAppDocumentLocation:" target="-2" id="Q4K-L1-yp7"/>
                     </connections>
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yR-yC-9gf">
@@ -52,13 +52,13 @@
                     </constraints>
                 </customView>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-LP-H5Q">
-                    <rect key="frame" x="178" y="5" width="81" height="32"/>
-                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cFb-yd-uhb">
+                    <rect key="frame" x="177" y="5" width="92" height="32"/>
+                    <buttonCell key="cell" type="push" title="Location" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cFb-yd-uhb">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="openAppDocumentLocation:" target="-2" id="KnE-gm-Dxt"/>
+                        <action selector="openAppLocation:" target="-2" id="q0K-qn-dB8"/>
                     </connections>
                 </button>
             </subviews>
@@ -69,7 +69,7 @@
                 <constraint firstItem="3yR-yC-9gf" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="7" id="IkD-pR-44m"/>
                 <constraint firstItem="rhw-kC-DAQ" firstAttribute="top" secondItem="3yR-yC-9gf" secondAttribute="top" id="UME-yq-a16"/>
                 <constraint firstItem="3yR-yC-9gf" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="16" id="d5N-hr-O9U"/>
-                <constraint firstItem="Afg-LP-H5Q" firstAttribute="leading" secondItem="vJ3-5v-LcS" secondAttribute="trailing" constant="43" id="lAZ-wx-ras"/>
+                <constraint firstItem="Afg-LP-H5Q" firstAttribute="leading" secondItem="vJ3-5v-LcS" secondAttribute="trailing" constant="20" id="lAZ-wx-ras"/>
                 <constraint firstItem="rhw-kC-DAQ" firstAttribute="leading" secondItem="3yR-yC-9gf" secondAttribute="trailing" constant="8" id="vtA-Lo-T2S"/>
                 <constraint firstItem="Afg-LP-H5Q" firstAttribute="centerY" secondItem="vJ3-5v-LcS" secondAttribute="centerY" id="wdN-Gq-zV8"/>
                 <constraint firstAttribute="trailing" secondItem="9PV-dv-h5l" secondAttribute="trailing" id="yiU-1c-J3x"/>

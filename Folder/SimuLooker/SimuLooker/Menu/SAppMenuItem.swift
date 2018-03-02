@@ -20,12 +20,28 @@ class SAppMenuItem: NSMenuItem {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override var image: NSImage?{
+        didSet{
+            guard let img = image else {return}
+            guard let v = view as? SAppItemView else {return}
+            v.appIcon.image = img
+        }
+    }
+    override var representedObject: Any?{
+        didSet{
+            guard let obj = representedObject as? SimuApplication else {return}
+            guard let appView = view as? SAppItemView else {return}
+            appView.application = obj
+        }
+    }
+    
 }
 
 
 extension SAppMenuItem{
     fileprivate func setupUI(){
         let appView = SAppItemView(frame: NSMakeRect(0, 0, 275, 70))
-        self.view = appView
+        appView.appName.stringValue = title
+        view = appView
     }
 }

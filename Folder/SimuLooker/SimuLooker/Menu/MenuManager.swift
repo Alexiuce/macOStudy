@@ -51,6 +51,7 @@ extension MenuManager{
                 $0.appArray.forEach({ (app) in
                     let appItem = SAppMenuItem(title: app.name, action: nil, keyEquivalent: "")
                     appItem.image = app.icon
+                    appItem.representedObject = app
                     subMenu.addItem(appItem)
                 })
                 deviceItem.submenu = subMenu

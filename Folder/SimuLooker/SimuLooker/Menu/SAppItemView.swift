@@ -17,6 +17,9 @@ class SAppItemView: NSView {
     
     @IBOutlet weak var bottomLineView: NSView!
     
+    var application : SimuApplication?
+    
+    
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
@@ -38,10 +41,14 @@ class SAppItemView: NSView {
     
     @IBAction func openAppDocumentLocation(_ sender: Any) {
         
-        print("open app document location")
+        guard let path = application?.documentPath else { return  }
+        NSWorkspace.shared.open(path)
+        
     }
     
     @IBAction func openAppLocation(_ sender: Any) {
-        print("open app location")
+       
+        guard let path = application?.path else { return  }
+        NSWorkspace.shared.open(path)
     }
 }
