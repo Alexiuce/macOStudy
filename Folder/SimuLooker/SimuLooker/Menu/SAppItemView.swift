@@ -24,7 +24,7 @@ class SAppItemView: NSView {
         super.init(frame: frameRect)
         
         Bundle.main.loadNibNamed(NSNib.Name.init(rawValue: "SAppMenuItem"), owner: self, topLevelObjects: nil)
-        
+
         self.addSubview(backgroundView)
     }
     

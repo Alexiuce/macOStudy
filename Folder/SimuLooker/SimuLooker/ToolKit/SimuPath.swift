@@ -22,7 +22,10 @@ struct SimuPath {
         return library.appendingPathComponent("Developer/CoreSimulator/Devices")
     }
 
-    /* device url */
+    /**
+     * 获取设备路径的url
+     * Parameter udid: 设备的id
+     */
     static func devicePath(udid: String) -> URL{
         return entryPath.appendingPathComponent("\(udid)")
     }

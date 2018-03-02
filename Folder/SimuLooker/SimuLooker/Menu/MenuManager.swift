@@ -8,7 +8,9 @@
 
 import Cocoa
 
+
 import SwiftyJSON
+
 
 class MenuManager: NSObject {
     
@@ -31,7 +33,9 @@ class MenuManager: NSObject {
         // 加载devices 数据
        devicesDictionary = SimuDeviceManager.loadSimuDevice()
         // 创建device menu
-        createDeviceMenu()
+         createDeviceMenu()
+        
+        
     }
     
 }
