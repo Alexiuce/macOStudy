@@ -39,22 +39,21 @@ class MenuManager: NSObject {
 extension MenuManager{
     fileprivate func  createDeviceMenu(){
         let mainMenu = NSMenu(title: "main")
-        
-        
         devicesDictionary.forEach { (key,value) in
           
             let titilItem = NSMenuItem(title: key, action: nil, keyEquivalent: "")
             mainMenu.addItem(titilItem)
             value.forEach{
-                let subItem = NSMenuItem(title: $0.name, action: nil, keyEquivalent: "")
-                mainMenu.addItem(subItem)
-                
+                let deviceItem = NSMenuItem(title: $0.name, action: nil, keyEquivalent: "")
+                deviceItem.image = NSImage(named: NSImage.Name("iPhone"))
+                mainMenu.addItem(deviceItem)
                 let subMenu = NSMenu()
                 $0.appArray.forEach({ (app) in
                     let appItem = NSMenuItem(title: app.name, action: nil, keyEquivalent: "")
+                    appItem.image = app.icon
                     subMenu.addItem(appItem)
                 })
-                subItem.submenu = subMenu
+                deviceItem.submenu = subMenu
             }
         }
          mainMenu.addItem(NSMenuItem.separator())
