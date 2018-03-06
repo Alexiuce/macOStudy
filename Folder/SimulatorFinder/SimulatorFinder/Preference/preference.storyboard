@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="IT3-uY-LpK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="Cey-RE-RUe">
+            <objects>
+                <windowController id="IT3-uY-LpK" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="YHy-ZF-Cn2">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+                        <connections>
+                            <outlet property="delegate" destination="IT3-uY-LpK" id="GKh-5n-vsH"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="E1r-vp-hxL" kind="relationship" relationship="window.shadowedContentViewController" id="7pD-hw-fjk"/>
+                    </connections>
+                </windowController>
+                <customObject id="cOS-i3-iKh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="77"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="tpD-Vl-hRV">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="E1r-vp-hxL" customClass="PTabViewController" customModule="SimulatorFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="General" identifier="" image="NSNetwork" id="hGC-pE-cxn"/>
+                        <tabViewItem label="Advance" identifier="" image="NSAdvanced" id="7e1-x2-nOw"/>
+                        <tabViewItem label="Test" image="NSAddTemplate" id="zYZ-p7-hQy"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="hQr-1v-DdW">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <tabViewItems/>
+                        <connections>
+                            <outlet property="delegate" destination="E1r-vp-hxL" id="QzW-in-nWu"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="hQr-1v-DdW" id="Ire-e8-Xud"/>
+                        <segue destination="InI-9d-StN" kind="relationship" relationship="tabItems" id="aG6-l8-GtN"/>
+                        <segue destination="Zh0-cA-YQn" kind="relationship" relationship="tabItems" id="sGZ-nW-D5F"/>
+                        <segue destination="UBw-Fe-X5L" kind="relationship" relationship="tabItems" id="CwG-Mr-afY"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="QaY-oa-T8c" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="578"/>
+        </scene>
+        <!--General View Controller-->
+        <scene sceneID="AkU-mu-SNv">
+            <objects>
+                <viewController id="InI-9d-StN" customClass="GeneralViewController" customModule="SimulatorFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="NCG-Yg-Ecw">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="169"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pae-IE-srp">
+                                <rect key="frame" x="91" y="76" width="144" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="General ViewController" id="GYT-4p-HrS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="pae-IE-srp" firstAttribute="centerX" secondItem="NCG-Yg-Ecw" secondAttribute="centerX" id="Tib-Rc-P1O"/>
+                            <constraint firstItem="pae-IE-srp" firstAttribute="centerY" secondItem="NCG-Yg-Ecw" secondAttribute="centerY" id="lH6-wv-HHd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="r7s-eb-KBc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="682" y="353"/>
+        </scene>
+        <!--Advance View Cotroller-->
+        <scene sceneID="RCh-a7-74A">
+            <objects>
+                <viewController id="Zh0-cA-YQn" customClass="AdvanceViewCotroller" customModule="SimulatorFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="B9j-z6-mXU">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OSH-yP-7A4">
+                                <rect key="frame" x="151" y="141" width="148" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="advance ViewController" id="b6D-LY-rEW">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="OSH-yP-7A4" firstAttribute="centerY" secondItem="B9j-z6-mXU" secondAttribute="centerY" id="AHf-Gt-HnM"/>
+                            <constraint firstItem="OSH-yP-7A4" firstAttribute="centerX" secondItem="B9j-z6-mXU" secondAttribute="centerX" id="RFe-Rx-fKH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="CxK-t9-bD4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744" y="757"/>
+        </scene>
+        <!--Test View Conotroller-->
+        <scene sceneID="w9z-9w-bhU">
+            <objects>
+                <viewController id="UBw-Fe-X5L" customClass="TestViewConotroller" customModule="SimulatorFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="wKO-b7-Yo9">
+                        <rect key="frame" x="0.0" y="0.0" width="748" height="428"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="ABW-Bx-XtT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="1227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSAdvanced" width="32" height="32"/>
+        <image name="NSNetwork" width="32" height="32"/>
+    </resources>
+</document>

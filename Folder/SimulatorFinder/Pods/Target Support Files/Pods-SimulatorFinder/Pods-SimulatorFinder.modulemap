@@ -1,0 +1,6 @@
+framework module Pods_SimulatorFinder {
+  umbrella header "Pods-SimulatorFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}
