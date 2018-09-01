@@ -11,8 +11,7 @@ import Foundation
 import SwiftyJSON
 
 struct SimuDeviceManager {
-
-
+    
     @discardableResult
     static func loadSimuDevice() -> [String:[Device]] {
         let cmdResult = ShellTask.execCmd(cmd: "/usr/bin/xcrun", arguments: ["simctl","list","-j","devices"])
@@ -30,11 +29,16 @@ struct SimuDeviceManager {
             value.arrayValue.forEach({ (deviceJson) in
                 let device = Device(osInfo: newkey, json: deviceJson)
                 if device.appArray.count > 0 {
-                    print(newkey)
                     result[newkey]?.append(device)
                 }
             })
+            
+            guard let count = result[newkey]?.count else { return }
+            if count < 1 {
+                result[newkey] = nil
+            }
         }
+        
         return result
     }
 }
