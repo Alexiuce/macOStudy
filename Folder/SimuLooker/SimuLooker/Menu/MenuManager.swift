@@ -92,7 +92,7 @@ extension MenuManager{
 // MARK: event response
 extension MenuManager{
     @objc fileprivate  func aboutItem(){
-        print("click about item")
+        
     }
     
     @objc fileprivate func preferenceItem(){
