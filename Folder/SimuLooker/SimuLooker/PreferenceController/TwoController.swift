@@ -15,7 +15,7 @@ class TwoController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.layer?.backgroundColor = NSColor.purple.cgColor
+        view.layer?.backgroundColor = NSColor.lightGray.cgColor
         self.preferredContentSize = view.frame.size
         // Do view setup here.
     }
