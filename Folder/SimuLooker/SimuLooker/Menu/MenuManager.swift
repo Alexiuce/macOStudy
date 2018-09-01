@@ -34,10 +34,10 @@ class MenuManager: NSObject {
        devicesDictionary = SimuDeviceManager.loadSimuDevice()
         // 创建device menu
          createDeviceMenu()
-        let n1 = ["a", "b", "c","d"]
-        let n2 = ["c", "d", "e"]
-        let difference = n1.difference(from: n2)
-        print(difference)
+//        let n1 = ["a", "b", "c","d"]
+//        let n2 = ["c", "d", "e"]
+//        let difference = n1.difference(from: n2)
+//        print(difference)
     }
     
 }

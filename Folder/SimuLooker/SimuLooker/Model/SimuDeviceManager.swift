@@ -21,11 +21,17 @@ struct SimuDeviceManager {
         
         json["devices"].dictionaryValue.forEach { (key,value) in
             if !key.contains("iOS"){return}
-            result[key] = [Device]()
+            var newkey = key;
+            let range = (key as NSString).range(of: ".iOS")
+            if range.location != NSNotFound {
+                newkey = (key as NSString).substring(from: range.location + 1)
+            }
+            result[newkey] = [Device]()
             value.arrayValue.forEach({ (deviceJson) in
-                let device = Device(osInfo: key, json: deviceJson)
+                let device = Device(osInfo: newkey, json: deviceJson)
                 if device.appArray.count > 0 {
-                    result[key]?.append(device)                    
+                    print(newkey)
+                    result[newkey]?.append(device)
                 }
             })
         }
