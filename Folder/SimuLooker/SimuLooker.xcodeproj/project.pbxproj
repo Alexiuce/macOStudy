@@ -27,6 +27,7 @@
 		56961F9F2047FD8F004C7393 /* SAppMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F9E2047FD8F004C7393 /* SAppMenuItem.swift */; };
 		C26656B38D60A5B3DD98B457 /* Pods_SimuLooker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */; };
 		D8148B9B213B798D00D29B3B /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8148B9A213B798D00D29B3B /* AboutWindowController.swift */; };
+		D8148B9D213B7D5400D29B3B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8148B9C213B7D5400D29B3B /* AboutViewController.swift */; };
 		D8560486213AC47900CF1DE5 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8560485213AC47900CF1DE5 /* about.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		56961F9E2047FD8F004C7393 /* SAppMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAppMenuItem.swift; sourceTree = "<group>"; };
 		B545A462D8A3051109925158 /* Pods-SimuLooker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.release.xcconfig"; sourceTree = "<group>"; };
 		D8148B9A213B798D00D29B3B /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		D8148B9C213B7D5400D29B3B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D8560485213AC47900CF1DE5 /* about.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = about.storyboard; sourceTree = "<group>"; };
 		D8969A61DA8AB60BBFDE7D63 /* Pods-SimuLooker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.debug.xcconfig"; sourceTree = "<group>"; };
 		F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimuLooker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 			children = (
 				D8560485213AC47900CF1DE5 /* about.storyboard */,
 				D8148B9A213B798D00D29B3B /* AboutWindowController.swift */,
+				D8148B9C213B7D5400D29B3B /* AboutViewController.swift */,
 			);
 			path = AboutController;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				5694E7AE2043A2460005B571 /* AppDelegate.swift in Sources */,
 				56961F9F2047FD8F004C7393 /* SAppMenuItem.swift in Sources */,
 				5640A33C2045264E001FE691 /* SimuApplication.swift in Sources */,
+				D8148B9D213B7D5400D29B3B /* AboutViewController.swift in Sources */,
 				5640A3382044EED7001FE691 /* Devices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,14 +26,18 @@
             </objects>
             <point key="canvasLocation" x="46" y="283"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="fB7-sN-bE8">
             <objects>
-                <viewController id="DCS-Tb-efv" sceneMemberID="viewController">
+                <viewController id="DCS-Tb-efv" customClass="AboutViewController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="ho7-sy-iRX">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <visualEffectView appearanceType="vibrantLight" fixedFrame="YES" blendingMode="behindWindow" material="titlebar" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-Rt-bBd">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </visualEffectView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HQo-ze-H3O">
                                 <rect key="frame" x="212" y="178" width="56" height="63"/>
                                 <constraints>
@@ -46,7 +50,7 @@
                                 <rect key="frame" x="202" y="151" width="76" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SimuLooker" id="7PC-IK-gm1">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -78,6 +82,9 @@
                             <constraint firstAttribute="bottom" secondItem="h3J-GB-14e" secondAttribute="bottom" constant="20" id="q7W-VB-0vh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="versionLabel" destination="d7O-ee-4IW" id="57R-Jk-sWd"/>
+                    </connections>
                 </viewController>
                 <customObject id="Gjn-IT-Mmm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
