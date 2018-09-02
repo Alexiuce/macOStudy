@@ -31,7 +31,7 @@
             <objects>
                 <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="eku-UD-cxW" customClass="PreTableViewController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="General" identifier="general" image="NSInfo" id="69d-HR-nsY"/>
+                        <tabViewItem label="General" identifier="general" image="NSPreferencesGeneral" id="69d-HR-nsY"/>
                         <tabViewItem label="Advance" identifier="advance" image="NSAdvanced" id="rXU-gg-C1i"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="CgT-4g-0Mu">
@@ -104,41 +104,29 @@
             <objects>
                 <viewController title="TwoController" id="vvt-73-aic" customClass="TwoController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="HKT-KA-6fN">
-                        <rect key="frame" x="0.0" y="0.0" width="332" height="215"/>
+                        <rect key="frame" x="0.0" y="0.0" width="411" height="187"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wd7-fI-G5c">
-                                <rect key="frame" x="152" y="99" width="29" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Two" id="WmY-bP-3jE">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BDC-AO-dIU">
-                                <rect key="frame" x="7" y="188" width="37" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="fhU-Mc-Pw0">
-                                    <font key="font" metaFont="system"/>
+                                <rect key="frame" x="108" y="128" width="42" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="启动: " id="fhU-Mc-Pw0">
+                                    <font key="font" size="14" name=".PingFangSC-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d0Z-sy-nLZ">
-                                <rect key="frame" x="288" y="11" width="37" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="6cO-m7-kuW">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nAJ-8s-XFb">
+                                <rect key="frame" x="162" y="126" width="113" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="随系统启动App" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="dwR-OB-rq1">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="BDC-AO-dIU" firstAttribute="top" secondItem="HKT-KA-6fN" secondAttribute="top" constant="10" id="5OM-ZY-fTj"/>
-                            <constraint firstAttribute="trailing" secondItem="d0Z-sy-nLZ" secondAttribute="trailing" constant="9" id="Ibj-zm-uUF"/>
-                            <constraint firstAttribute="bottom" secondItem="d0Z-sy-nLZ" secondAttribute="bottom" constant="11" id="QgT-5n-fIX"/>
-                            <constraint firstItem="BDC-AO-dIU" firstAttribute="leading" secondItem="HKT-KA-6fN" secondAttribute="leading" constant="9" id="cwt-20-XHc"/>
-                            <constraint firstItem="Wd7-fI-G5c" firstAttribute="centerY" secondItem="HKT-KA-6fN" secondAttribute="centerY" id="qH0-Mz-nvh"/>
-                            <constraint firstItem="Wd7-fI-G5c" firstAttribute="centerX" secondItem="HKT-KA-6fN" secondAttribute="centerX" id="seN-bl-vnl"/>
+                            <constraint firstItem="BDC-AO-dIU" firstAttribute="leading" secondItem="HKT-KA-6fN" secondAttribute="leading" constant="110" id="1ON-fG-AVX"/>
+                            <constraint firstItem="BDC-AO-dIU" firstAttribute="top" secondItem="HKT-KA-6fN" secondAttribute="top" constant="41" id="ALR-hK-w40"/>
                         </constraints>
                     </view>
                     <connections>
@@ -147,11 +135,11 @@
                 </viewController>
                 <customObject id="6AN-fA-jGw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="655"/>
+            <point key="canvasLocation" x="800" y="617"/>
         </scene>
     </scenes>
     <resources>
         <image name="NSAdvanced" width="32" height="32"/>
-        <image name="NSInfo" width="32" height="32"/>
+        <image name="NSPreferencesGeneral" width="32" height="32"/>
     </resources>
 </document>
