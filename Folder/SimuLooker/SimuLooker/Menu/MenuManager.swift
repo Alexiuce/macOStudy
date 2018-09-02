@@ -71,15 +71,17 @@ extension MenuManager{
             }
         }
          mainMenu.addItem(NSMenuItem.separator())
+       
         // 1. 添加item
-        let aboutItem = NSMenuItem(title: "About SimuLooker", action: #selector(self.aboutItem), keyEquivalent: "")
-        aboutItem.target = self
-        mainMenu.addItem(aboutItem)
         
         let preferenceItem = NSMenuItem(title: "Preferences", action: #selector(self.preferenceItem), keyEquivalent: ",")
         preferenceItem.target = self
         mainMenu.addItem(preferenceItem)
         mainMenu.addItem(NSMenuItem.separator())
+        
+        let aboutItem = NSMenuItem(title: "About SimuLooker", action: #selector(self.aboutItem), keyEquivalent: "")
+        aboutItem.target = self
+        mainMenu.addItem(aboutItem)
         
         let exitItem = NSMenuItem(title: "Exit SimuLooker", action: #selector(self.exitItem), keyEquivalent: "q")
         exitItem.target = self
