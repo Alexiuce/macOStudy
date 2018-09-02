@@ -126,7 +126,7 @@ extension MenuManager{
     
     /// 更新设备列表 事件响应
     @objc fileprivate func refreshDeviceItem(){
-        print("hello refresh")
+        awakeFromNib()
     }
     
 }

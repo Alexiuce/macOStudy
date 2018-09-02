@@ -43,7 +43,7 @@
                         <constraint firstAttribute="height" constant="48" id="DhL-7n-qbg"/>
                         <constraint firstAttribute="width" constant="48" id="wha-Xo-Qyk"/>
                     </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSComputer" id="idB-4v-9OQ"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="NSComputer" id="idB-4v-9OQ"/>
                 </imageView>
                 <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9PV-dv-h5l">
                     <rect key="frame" x="0.0" y="0.0" width="273" height="1"/>
