@@ -21,6 +21,14 @@ class MenuManager: NSObject {
         return vc
     }()
  
+    
+    lazy var aboutController: NSWindowController = {
+        let vc = NSStoryboard(name: NSStoryboard.Name.init("about"), bundle: nil).instantiateInitialController() as! AboutWindowController
+        
+        return vc
+    }()
+    
+    
     lazy var statusItem: NSStatusItem = {
         let item = NSStatusBar.system.statusItem(withLength:NSStatusItem.variableLength)
         let image = NSImage(named: NSImage.Name("StatusItemIcon"))
@@ -74,16 +82,20 @@ extension MenuManager{
        
         // 1. 添加item
         
-        let preferenceItem = NSMenuItem(title: "Preferences", action: #selector(self.preferenceItem), keyEquivalent: ",")
+        let refreshItem = NSMenuItem(title: "Refresh", action: #selector(refreshDeviceItem), keyEquivalent: "r")
+        refreshItem.target = self
+        mainMenu.addItem(refreshItem)
+        
+        let preferenceItem = NSMenuItem(title: "Preferences", action: #selector(clickPreferenceItem), keyEquivalent: ",")
         preferenceItem.target = self
         mainMenu.addItem(preferenceItem)
-        mainMenu.addItem(NSMenuItem.separator())
         
-        let aboutItem = NSMenuItem(title: "About SimuLooker", action: #selector(self.aboutItem), keyEquivalent: "")
+        let aboutItem = NSMenuItem(title: "About SimuLooker", action: #selector(clickAboutItem), keyEquivalent: "")
         aboutItem.target = self
         mainMenu.addItem(aboutItem)
+        mainMenu.addItem(NSMenuItem.separator())
         
-        let exitItem = NSMenuItem(title: "Exit SimuLooker", action: #selector(self.exitItem), keyEquivalent: "q")
+        let exitItem = NSMenuItem(title: "Exit SimuLooker", action: #selector(clickExitItem), keyEquivalent: "q")
         exitItem.target = self
         mainMenu.addItem(exitItem)
         
@@ -93,16 +105,28 @@ extension MenuManager{
 
 // MARK: event response
 extension MenuManager{
-    @objc fileprivate  func aboutItem(){
-        
+    
+    /// 关于 事件响应
+    @objc fileprivate  func clickAboutItem(){
+        aboutController.window?.orderFrontRegardless()
+        aboutController.showWindow(self)
     }
     
-    @objc fileprivate func preferenceItem(){
+    /// 偏好设置 事件响应
+    @objc fileprivate func clickPreferenceItem(){
         preferenceController.window?.orderFrontRegardless()
         preferenceController.showWindow(self)
     }
-    @objc fileprivate func exitItem(){
+    
+    /// 退出 事件响应
+    @objc fileprivate func clickExitItem(){
         NSApp.terminate(self)
+    }
+    
+    
+    /// 更新设备列表 事件响应
+    @objc fileprivate func refreshDeviceItem(){
+        print("hello refresh")
     }
     
 }
