@@ -102,7 +102,7 @@
         <!--TwoController-->
         <scene sceneID="pri-8c-brc">
             <objects>
-                <viewController title="TwoController" id="vvt-73-aic" customClass="TwoController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="TwoController" id="vvt-73-aic" customClass="AdvanceController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="HKT-KA-6fN">
                         <rect key="frame" x="0.0" y="0.0" width="411" height="187"/>
                         <autoresizingMask key="autoresizingMask"/>

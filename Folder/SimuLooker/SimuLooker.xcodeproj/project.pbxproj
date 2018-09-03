@@ -21,7 +21,7 @@
 		56961F8D204698E2004C7393 /* preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56961F8C204698E2004C7393 /* preference.storyboard */; };
 		56961F932046ABFB004C7393 /* PreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F922046ABFB004C7393 /* PreTableViewController.swift */; };
 		56961F952046B225004C7393 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F942046B225004C7393 /* OneController.swift */; };
-		56961F972046B239004C7393 /* TwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F962046B239004C7393 /* TwoController.swift */; };
+		56961F972046B239004C7393 /* AdvanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F962046B239004C7393 /* AdvanceController.swift */; };
 		56961F9B2047CA3C004C7393 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */; };
 		56961F9D2047DA17004C7393 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F9C2047DA17004C7393 /* MenuManager.swift */; };
 		56961F9F2047FD8F004C7393 /* SAppMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F9E2047FD8F004C7393 /* SAppMenuItem.swift */; };
@@ -29,7 +29,25 @@
 		D8148B9B213B798D00D29B3B /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8148B9A213B798D00D29B3B /* AboutWindowController.swift */; };
 		D8148B9D213B7D5400D29B3B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8148B9C213B7D5400D29B3B /* AboutViewController.swift */; };
 		D8560486213AC47900CF1DE5 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8560485213AC47900CF1DE5 /* about.storyboard */; };
+		D8F43BCE213CB4AE0077FB13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F43BCD213CB4AE0077FB13 /* AppDelegate.swift */; };
+		D8F43BD0213CB4AE0077FB13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F43BCF213CB4AE0077FB13 /* ViewController.swift */; };
+		D8F43BD2213CB4AE0077FB13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F43BD1213CB4AE0077FB13 /* Assets.xcassets */; };
+		D8F43BD5213CB4AE0077FB13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F43BD3213CB4AE0077FB13 /* Main.storyboard */; };
+		D8F43BDC213CB66C0077FB13 /* SimuLookerAutoStartHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8F43BCB213CB4AE0077FB13 /* SimuLookerAutoStartHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8F43BDB213CB63B0077FB13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				D8F43BDC213CB66C0077FB13 /* SimuLookerAutoStartHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5640A3372044EED7001FE691 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
@@ -49,7 +67,7 @@
 		56961F8C204698E2004C7393 /* preference.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = preference.storyboard; sourceTree = "<group>"; };
 		56961F922046ABFB004C7393 /* PreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreTableViewController.swift; sourceTree = "<group>"; };
 		56961F942046B225004C7393 /* OneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneController.swift; sourceTree = "<group>"; };
-		56961F962046B239004C7393 /* TwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoController.swift; sourceTree = "<group>"; };
+		56961F962046B239004C7393 /* AdvanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceController.swift; sourceTree = "<group>"; };
 		56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 		56961F9C2047DA17004C7393 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		56961F9E2047FD8F004C7393 /* SAppMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAppMenuItem.swift; sourceTree = "<group>"; };
@@ -58,6 +76,13 @@
 		D8148B9C213B7D5400D29B3B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D8560485213AC47900CF1DE5 /* about.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = about.storyboard; sourceTree = "<group>"; };
 		D8969A61DA8AB60BBFDE7D63 /* Pods-SimuLooker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.debug.xcconfig"; sourceTree = "<group>"; };
+		D8F43BCB213CB4AE0077FB13 /* SimuLookerAutoStartHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimuLookerAutoStartHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F43BCD213CB4AE0077FB13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8F43BCF213CB4AE0077FB13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8F43BD1213CB4AE0077FB13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8F43BD4213CB4AE0077FB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8F43BD6213CB4AE0077FB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F43BD7213CB4AE0077FB13 /* SimuLookerAutoStartHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimuLookerAutoStartHelper.entitlements; sourceTree = "<group>"; };
 		F719ACEAB93E4E7B274B3D6D /* Pods_SimuLooker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimuLooker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +92,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26656B38D60A5B3DD98B457 /* Pods_SimuLooker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F43BC8213CB4AE0077FB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				5694E7AC2043A2460005B571 /* SimuLooker */,
+				D8F43BCC213CB4AE0077FB13 /* SimuLookerAutoStartHelper */,
 				5694E7AB2043A2460005B571 /* Products */,
 				067E84FC12928A05CB1EDD88 /* Pods */,
 				B5D69E3BD074C1C31FA98603 /* Frameworks */,
@@ -106,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				5694E7AA2043A2460005B571 /* SimuLooker.app */,
+				D8F43BCB213CB4AE0077FB13 /* SimuLookerAutoStartHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,7 +189,7 @@
 				56961F922046ABFB004C7393 /* PreTableViewController.swift */,
 				56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */,
 				56961F942046B225004C7393 /* OneController.swift */,
-				56961F962046B239004C7393 /* TwoController.swift */,
+				56961F962046B239004C7393 /* AdvanceController.swift */,
 			);
 			path = PreferenceController;
 			sourceTree = "<group>";
@@ -178,6 +212,19 @@
 			path = AboutController;
 			sourceTree = "<group>";
 		};
+		D8F43BCC213CB4AE0077FB13 /* SimuLookerAutoStartHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D8F43BCD213CB4AE0077FB13 /* AppDelegate.swift */,
+				D8F43BCF213CB4AE0077FB13 /* ViewController.swift */,
+				D8F43BD1213CB4AE0077FB13 /* Assets.xcassets */,
+				D8F43BD3213CB4AE0077FB13 /* Main.storyboard */,
+				D8F43BD6213CB4AE0077FB13 /* Info.plist */,
+				D8F43BD7213CB4AE0077FB13 /* SimuLookerAutoStartHelper.entitlements */,
+			);
+			path = SimuLookerAutoStartHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +238,7 @@
 				5694E7A82043A2460005B571 /* Resources */,
 				262DF17F77DD1F27484CF55E /* [CP] Embed Pods Frameworks */,
 				49CBD3194B61AF31C4927433 /* [CP] Copy Pods Resources */,
+				D8F43BDB213CB63B0077FB13 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -201,13 +249,30 @@
 			productReference = 5694E7AA2043A2460005B571 /* SimuLooker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D8F43BCA213CB4AE0077FB13 /* SimuLookerAutoStartHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8F43BDA213CB4AE0077FB13 /* Build configuration list for PBXNativeTarget "SimuLookerAutoStartHelper" */;
+			buildPhases = (
+				D8F43BC7213CB4AE0077FB13 /* Sources */,
+				D8F43BC8213CB4AE0077FB13 /* Frameworks */,
+				D8F43BC9213CB4AE0077FB13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimuLookerAutoStartHelper;
+			productName = SimuLookerAutoStartHelper;
+			productReference = D8F43BCB213CB4AE0077FB13 /* SimuLookerAutoStartHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5694E7A22043A2460005B571 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = alexiuce.github.io;
 				TargetAttributes = {
@@ -219,6 +284,10 @@
 								enabled = 0;
 							};
 						};
+					};
+					D8F43BCA213CB4AE0077FB13 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -236,6 +305,7 @@
 			projectRoot = "";
 			targets = (
 				5694E7A92043A2460005B571 /* SimuLooker */,
+				D8F43BCA213CB4AE0077FB13 /* SimuLookerAutoStartHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +320,15 @@
 				568D8A742048F40D00F49E35 /* SAppMenuItem.xib in Resources */,
 				5694E7B32043A2460005B571 /* MainMenu.xib in Resources */,
 				56961F8D204698E2004C7393 /* preference.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F43BC9213CB4AE0077FB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F43BD2213CB4AE0077FB13 /* Assets.xcassets in Resources */,
+				D8F43BD5213CB4AE0077FB13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +401,7 @@
 				5640A33A2044F3C7001FE691 /* ShellTask.swift in Sources */,
 				D8148B9B213B798D00D29B3B /* AboutWindowController.swift in Sources */,
 				56961F9D2047DA17004C7393 /* MenuManager.swift in Sources */,
-				56961F972046B239004C7393 /* TwoController.swift in Sources */,
+				56961F972046B239004C7393 /* AdvanceController.swift in Sources */,
 				56961F932046ABFB004C7393 /* PreTableViewController.swift in Sources */,
 				5640A340204531CA001FE691 /* SimuPath.swift in Sources */,
 				5694E7AE2043A2460005B571 /* AppDelegate.swift in Sources */,
@@ -330,6 +409,15 @@
 				5640A33C2045264E001FE691 /* SimuApplication.swift in Sources */,
 				D8148B9D213B7D5400D29B3B /* AboutViewController.swift in Sources */,
 				5640A3382044EED7001FE691 /* Devices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F43BC7213CB4AE0077FB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F43BD0213CB4AE0077FB13 /* ViewController.swift in Sources */,
+				D8F43BCE213CB4AE0077FB13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +430,14 @@
 				5694E7B22043A2460005B571 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D8F43BD3213CB4AE0077FB13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8F43BD4213CB4AE0077FB13 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -483,6 +579,48 @@
 			};
 			name = Release;
 		};
+		D8F43BD8213CB4AE0077FB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = SimuLookerAutoStartHelper/SimuLookerAutoStartHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57SDN968Q2;
+				INFOPLIST_FILE = SimuLookerAutoStartHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongjiu.SimuLookerAutoStartHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D8F43BD9213CB4AE0077FB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = SimuLookerAutoStartHelper/SimuLookerAutoStartHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57SDN968Q2;
+				INFOPLIST_FILE = SimuLookerAutoStartHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongjiu.SimuLookerAutoStartHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -500,6 +638,15 @@
 			buildConfigurations = (
 				5694E7B92043A2460005B571 /* Debug */,
 				5694E7BA2043A2460005B571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8F43BDA213CB4AE0077FB13 /* Build configuration list for PBXNativeTarget "SimuLookerAutoStartHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F43BD8213CB4AE0077FB13 /* Debug */,
+				D8F43BD9213CB4AE0077FB13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

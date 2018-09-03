@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class TwoController: NSViewController {
+class AdvanceController: NSViewController {
 
     @IBOutlet var backgroundView: NSView!
     
@@ -17,6 +17,7 @@ class TwoController: NSViewController {
         
         view.layer?.backgroundColor = NSColor.lightGray.cgColor
         self.preferredContentSize = view.frame.size
+        
         // Do view setup here.
     }
     
