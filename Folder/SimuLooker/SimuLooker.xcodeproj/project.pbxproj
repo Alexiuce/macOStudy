@@ -593,7 +593,7 @@
 				DEVELOPMENT_TEAM = 57SDN968Q2;
 				INFOPLIST_FILE = SimuLookerAutoStartHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dongjiu.SimuLookerAutoStartHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.SimuLookerAutoStartHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -614,7 +614,7 @@
 				DEVELOPMENT_TEAM = 57SDN968Q2;
 				INFOPLIST_FILE = SimuLookerAutoStartHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dongjiu.SimuLookerAutoStartHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.SimuLookerAutoStartHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;

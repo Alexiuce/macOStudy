@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="819" y="292"/>
         </scene>
-        <!--TwoController-->
+        <!--AdvanceController-->
         <scene sceneID="pri-8c-brc">
             <objects>
-                <viewController title="TwoController" id="vvt-73-aic" customClass="AdvanceController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AdvanceController" id="vvt-73-aic" customClass="AdvanceController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="HKT-KA-6fN">
                         <rect key="frame" x="0.0" y="0.0" width="411" height="187"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -118,10 +118,13 @@
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nAJ-8s-XFb">
                                 <rect key="frame" x="162" y="126" width="113" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="随系统启动App" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="dwR-OB-rq1">
+                                <buttonCell key="cell" type="check" title="随系统启动App" bezelStyle="regularSquare" imagePosition="left" inset="2" id="dwR-OB-rq1">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="clickAutostartButton:" target="vvt-73-aic" id="k6W-Lt-wku"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -130,6 +133,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="autoStartButton" destination="nAJ-8s-XFb" id="gXX-bk-148"/>
                         <outlet property="backgroundView" destination="HKT-KA-6fN" id="FWk-8g-mH7"/>
                     </connections>
                 </viewController>
