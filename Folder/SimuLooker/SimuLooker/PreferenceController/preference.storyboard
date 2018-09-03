@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="-40" y="560"/>
         </scene>
-        <!--OneController-->
+        <!--通用设置-->
         <scene sceneID="l8o-Lo-Mu7">
             <objects>
-                <viewController title="OneController" id="E89-p6-UZK" customClass="OneController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="通用设置" id="E89-p6-UZK" customClass="GeneralController" customModule="SimuLooker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="ctB-ot-oOu">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
                         <autoresizingMask key="autoresizingMask"/>

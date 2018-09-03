@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class OneController: NSViewController {
+class GeneralController: NSViewController {
 
     
     override func viewDidLoad() {

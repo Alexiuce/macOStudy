@@ -20,7 +20,7 @@
 		5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */; };
 		56961F8D204698E2004C7393 /* preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56961F8C204698E2004C7393 /* preference.storyboard */; };
 		56961F932046ABFB004C7393 /* PreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F922046ABFB004C7393 /* PreTableViewController.swift */; };
-		56961F952046B225004C7393 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F942046B225004C7393 /* OneController.swift */; };
+		56961F952046B225004C7393 /* GeneralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F942046B225004C7393 /* GeneralController.swift */; };
 		56961F972046B239004C7393 /* AdvanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F962046B239004C7393 /* AdvanceController.swift */; };
 		56961F9B2047CA3C004C7393 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */; };
 		56961F9D2047DA17004C7393 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56961F9C2047DA17004C7393 /* MenuManager.swift */; };
@@ -66,7 +66,7 @@
 		5694E7BE2043AF5F0005B571 /* ActionTrampline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTrampline.swift; sourceTree = "<group>"; };
 		56961F8C204698E2004C7393 /* preference.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = preference.storyboard; sourceTree = "<group>"; };
 		56961F922046ABFB004C7393 /* PreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreTableViewController.swift; sourceTree = "<group>"; };
-		56961F942046B225004C7393 /* OneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneController.swift; sourceTree = "<group>"; };
+		56961F942046B225004C7393 /* GeneralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralController.swift; sourceTree = "<group>"; };
 		56961F962046B239004C7393 /* AdvanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceController.swift; sourceTree = "<group>"; };
 		56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 		56961F9C2047DA17004C7393 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 				56961F8C204698E2004C7393 /* preference.storyboard */,
 				56961F922046ABFB004C7393 /* PreTableViewController.swift */,
 				56961F9A2047CA3C004C7393 /* PreferenceWindowController.swift */,
-				56961F942046B225004C7393 /* OneController.swift */,
+				56961F942046B225004C7393 /* GeneralController.swift */,
 				56961F962046B239004C7393 /* AdvanceController.swift */,
 			);
 			path = PreferenceController;
@@ -397,7 +397,7 @@
 				568D8A762048F44600F49E35 /* SAppItemView.swift in Sources */,
 				5694E7BF2043AF5F0005B571 /* ActionTrampline.swift in Sources */,
 				5640A33E20452D39001FE691 /* SimuDeviceManager.swift in Sources */,
-				56961F952046B225004C7393 /* OneController.swift in Sources */,
+				56961F952046B225004C7393 /* GeneralController.swift in Sources */,
 				5640A33A2044F3C7001FE691 /* ShellTask.swift in Sources */,
 				D8148B9B213B798D00D29B3B /* AboutWindowController.swift in Sources */,
 				56961F9D2047DA17004C7393 /* MenuManager.swift in Sources */,
