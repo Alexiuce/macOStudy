@@ -30,7 +30,6 @@
 		D8148B9D213B7D5400D29B3B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8148B9C213B7D5400D29B3B /* AboutViewController.swift */; };
 		D8560486213AC47900CF1DE5 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8560485213AC47900CF1DE5 /* about.storyboard */; };
 		D8F43BCE213CB4AE0077FB13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F43BCD213CB4AE0077FB13 /* AppDelegate.swift */; };
-		D8F43BD0213CB4AE0077FB13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F43BCF213CB4AE0077FB13 /* ViewController.swift */; };
 		D8F43BD2213CB4AE0077FB13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F43BD1213CB4AE0077FB13 /* Assets.xcassets */; };
 		D8F43BD5213CB4AE0077FB13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F43BD3213CB4AE0077FB13 /* Main.storyboard */; };
 		D8F43BDC213CB66C0077FB13 /* SimuLookerAutoStartHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8F43BCB213CB4AE0077FB13 /* SimuLookerAutoStartHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -78,7 +77,6 @@
 		D8969A61DA8AB60BBFDE7D63 /* Pods-SimuLooker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimuLooker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimuLooker/Pods-SimuLooker.debug.xcconfig"; sourceTree = "<group>"; };
 		D8F43BCB213CB4AE0077FB13 /* SimuLookerAutoStartHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimuLookerAutoStartHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F43BCD213CB4AE0077FB13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8F43BCF213CB4AE0077FB13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8F43BD1213CB4AE0077FB13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F43BD4213CB4AE0077FB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8F43BD6213CB4AE0077FB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				D8F43BCD213CB4AE0077FB13 /* AppDelegate.swift */,
-				D8F43BCF213CB4AE0077FB13 /* ViewController.swift */,
 				D8F43BD1213CB4AE0077FB13 /* Assets.xcassets */,
 				D8F43BD3213CB4AE0077FB13 /* Main.storyboard */,
 				D8F43BD6213CB4AE0077FB13 /* Info.plist */,
@@ -416,7 +413,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F43BD0213CB4AE0077FB13 /* ViewController.swift in Sources */,
 				D8F43BCE213CB4AE0077FB13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

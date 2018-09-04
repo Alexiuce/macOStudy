@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="1br-Dz-5VY">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="1AP-Mt-4L9">
+            <objects>
+                <windowController id="1br-Dz-5VY" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="HTG-lv-ckU">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <connections>
+                            <outlet property="delegate" destination="1br-Dz-5VY" id="anQ-OU-GKf"/>
+                        </connections>
+                    </window>
+                </windowController>
+                <customObject id="jNk-tY-fzo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="119"/>
+        </scene>
+    </scenes>
 </document>

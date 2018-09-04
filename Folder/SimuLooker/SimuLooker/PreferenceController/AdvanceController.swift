@@ -39,13 +39,22 @@ extension AdvanceController{
      
         let launcherAppIdentifier = "com.alexiuce.SimuLookerAutoStartHelper"
         
-        let launcherAppPath = (Bundle.main.bundlePath as NSString).appendingPathComponent("Contents/Library/LoginItems/SimuLookerAutoStartHelper")
+        let launcherAppPath = (Bundle.main.bundlePath as NSString).appendingPathComponent("Contents/Library/LoginItems/SimuLookerAutoStartHelper.app")
         
         if !FileManager.default.fileExists(atPath: launcherAppPath) {
             return
         }
         
-        SMLoginItemSetEnabled(launcherAppIdentifier as CFString, startup);
+        let configResult =  SMLoginItemSetEnabled(launcherAppIdentifier as CFString, startup);
+        print("\(configResult)")
+    
+        
+        NSWorkspace.shared.runningApplications.forEach {
+            if $0.bundleIdentifier == launcherAppPath{
+                DistributedNotificationCenter.default.post(name: NSNotification.Name(rawValue: "killhelper"), object: Bundle.main.bundleIdentifier!)
+                
+            }
+        }
     
     
     }
