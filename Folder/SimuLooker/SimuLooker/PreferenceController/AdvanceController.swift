@@ -23,6 +23,9 @@ class AdvanceController: NSViewController {
         view.layer?.backgroundColor = NSColor.lightGray.cgColor
         self.preferredContentSize = view.frame.size
         
+        let isAuto = UserDefaults.standard.bool(forKey: "simu_auto_start_key")
+        autoStartButton.state = isAuto ? .on : .off
+        
      
     }
     
@@ -30,7 +33,10 @@ class AdvanceController: NSViewController {
         
         let isAutostart = sender.state == .on
         startupAppWhenLogin(startup: isAutostart)
-        }
+        UserDefaults.standard.set(isAutostart, forKey:"simu_auto_start_key")
+        UserDefaults.standard.synchronize()
+        
+    }
     
 }
 
@@ -39,7 +45,7 @@ extension AdvanceController{
      
         let launcherAppIdentifier = "com.alexiuce.SimuLookerAutoStartHelper"
         
-        let launcherAppPath = (Bundle.main.bundlePath as NSString).appendingPathComponent("Contents/Library/LoginItems/SimuLookerAutoStartHelper.app")
+        let launcherAppPath = (Bundle.main.bundlePath as NSString).appendingPathComponent("Contents/Library/LoginItems/SimuStartHelper.app")
         
         if !FileManager.default.fileExists(atPath: launcherAppPath) {
             return
@@ -47,14 +53,6 @@ extension AdvanceController{
         
         let configResult =  SMLoginItemSetEnabled(launcherAppIdentifier as CFString, startup);
         print("\(configResult)")
-    
-        
-        NSWorkspace.shared.runningApplications.forEach {
-            if $0.bundleIdentifier == launcherAppPath{
-                DistributedNotificationCenter.default.post(name: NSNotification.Name(rawValue: "killhelper"), object: Bundle.main.bundleIdentifier!)
-                
-            }
-        }
     
     
     }
