@@ -27,9 +27,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let path = Bundle.main.bundlePath
             
             let appPath = path.replacingOccurrences(of: "/Library/LoginItems/SimuStartHelper.app", with:"/MacOS/SimuLooker")
-            
-          
-            
             if !FileManager.default.fileExists(atPath: appPath) {
                 return;
             }
